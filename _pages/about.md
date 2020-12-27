@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Pedro's website -- About me"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,4 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+My name is Pedro Rodrigues and I am post-doc at the Parietal team from INRIA, France. My main topic of interest at the moment is **simulation-based inference** and how to apply it to computational neuroscience.
+
+Prior to my post-doc, I did a Ph.D. at the GIPSA-lab, France, under the supervision of Marco Congedo and Christian Jutten. The title of my thesis is "Exploring invariances of multivariate time series via Riemannian geometry: validation on EEG data" and it is available for download [here](https://hal.archives-ouvertes.fr/tel-02345388). The idea of my thesis was to explore ways of applying machine learning tools to the analysis and classification of neural time series. The inspiration for most of my contributions came from practical problems involving EEG recordings from Brain-Computer Interfaces. Before coming to Grenoble for my Ph.D., I worked for two years as a graduate researcher under the supervision of professor Luiz A. Baccalá at the University of São Paulo. During this period, I developed algorithms for estimating neural connectivity with multivariate recordings from the brain.
+
+I hold a B.S. and a M.S. from the University of São Paulo, Brazil, and also a Diplôme de l'École Polytechnique (X2010), France.

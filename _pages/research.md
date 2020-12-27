@@ -3,9 +3,6 @@ permalink: /research/
 title: 
 excerpt: "Research"
 author_profile: true
-redirect_from: 
-  - /research/
-  - /research.html
 ---
 
 In this page I summarize some of the research questions that I've investigated 

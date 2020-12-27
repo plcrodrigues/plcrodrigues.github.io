@@ -305,3 +305,9 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Navigation bar options
+navbar: light          # other option dark
+navbar-bg: light       # other option dark
+navbar-fixed-top: true # if true, also check _sass/bootstrap4-cdn.scss padding top
+

@@ -14,7 +14,10 @@ layout: compress
   <body>
 
     {% include browser-upgrade.html %}
-    {% include masthead.html %}
+    {% if site.navbar-fixed-top == false %}<div class="container">{% endif %}
+      {% include nav.html %}
+      {% if site.navbar-fixed-top == false %}</div>{% endif %}    
+    <!-- {% include masthead.html %} -->
 
     {{ content }}
 

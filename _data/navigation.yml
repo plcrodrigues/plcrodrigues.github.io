@@ -22,21 +22,16 @@
 #   - title: "CV"
 #     url: /cv/
 
-- title: About
-  url: /about.html
-- title: Team
-  url: /team.html
+- title: Home
+  url: /
+
 - title: Contact
-  url: /contact.html
-- title: Store
-  url: /store.html
-- title: Support
-  url: /support.html
+  url: /contact/
+
+- title: About
+  url: /about/
   sublinks:
-    - title: FAQ
-      url: /faq.html
-    - title: Documentation
-      url: /documentation.html
-    - title: separator
-    - title: Customer Support
-      url: /customer-support.html
+    - title: Company
+      url: /about/company/
+    - title: Jobs
+      url: /about/jobs/

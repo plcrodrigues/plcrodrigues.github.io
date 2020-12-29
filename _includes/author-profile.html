@@ -8,15 +8,15 @@
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
-    	<img src="{{ author.avatar }}" alt="{{ author.name }}">
+    	<img src="{{ author.avatar }}" alt="{{ author.name }}" style="padding: 0px">
     {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
+    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}" style="padding: 0px; border: 0">
     {% endif %}
   </div>
 
-  <div class="author__content">
+  <div class="author__content" style="margin-top: 1.2em;">
     <h1 class="author__name">{{ author.name }}</h1>
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    {% if author.bio %}<p class="author__bio" style="margin-top: 0em;">{{ author.bio }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">

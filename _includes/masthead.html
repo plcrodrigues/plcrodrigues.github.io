@@ -21,10 +21,14 @@
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            {% if link.title == "Research" %}
-              <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">Research</a></li>
+            {% if link.title == "About me" %}
+              <li><a href="{{ domain }}{{ link.url }}">
+                <img src="/images/mountains.svg" width="60px"/></a>
+              </li>
+              <li class="masthead__menu-item" style="font-size:1.15em;"><a href="{{ domain }}{{ link.url }}">Home</a>
+              </li>              
             {% else %}
-              <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>              
+              <li class="masthead__menu-item" style="font-size:1.15em;"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>              
             {% endif %}
           {% endfor %}
         </ul>

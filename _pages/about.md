@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<img src="/images/profile.png" alt="drawing" width="35%" style="display: block;
+<img src="/images/profile.png" alt="drawing" width="350px" style="display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;

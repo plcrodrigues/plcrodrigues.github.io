@@ -1,20 +1,10 @@
 {% include base_path %}
 
-<div class="masthead">
+<div class="masthead" style="border-bottom: 3px solid #00b050">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <!-- <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li> -->
-          <li class="masthead__menu-item masthead__menu-item--lg"></li>
-          <!-- <li class="masthead__menu-item masthead__menu-item--lg">
-            <img
-            src="/images/signal_background.svg"
-            alt="pedro's alpha rhythm on a EEG recording"
-            style="max-height: 3.2em; width: auto;"
-            />
-          </li> -->
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
@@ -25,10 +15,10 @@
               <li><a href="{{ domain }}{{ link.url }}">
                 <img src="/images/mountains.svg" width="60px"/></a>
               </li>
-              <li class="masthead__menu-item" style="font-size:1.15em;"><a href="{{ domain }}{{ link.url }}">Home</a>
+              <li class="masthead__menu-item" style="font-size:1.0em;"><a href="{{ domain }}{{ link.url }}" style="color:#00b050; font-weight:bold;">HOME</a>
               </li>              
             {% else %}
-              <li class="masthead__menu-item" style="font-size:1.15em;"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>              
+              <li class="masthead__menu-item" style="font-size:1.0em;"><a href="{{ domain }}{{ link.url }}" style="color:#00b050; font-weight:bold;">{{ link.title }}</a></li>              
             {% endif %}
           {% endfor %}
         </ul>

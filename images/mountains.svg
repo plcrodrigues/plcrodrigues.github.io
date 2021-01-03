@@ -21,7 +21,7 @@
    inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
    id="metadata39"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
    id="defs37" /><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
@@ -39,8 +39,8 @@
    fit-margin-left="0"
    fit-margin-right="0"
    fit-margin-bottom="0"
-   inkscape:zoom="2.0268543"
-   inkscape:cx="155.55184"
+   inkscape:zoom="1.3538753"
+   inkscape:cx="122.68323"
    inkscape:cy="111.977"
    inkscape:window-x="67"
    inkscape:window-y="27"
@@ -50,7 +50,7 @@
    d="M 310.69384,216.98 241.19984,56.5 c -0.791,-1.826 -2.59,-3.007 -4.58,-3.007 -1.989,0 -3.789,1.182 -4.58,3.007 l -30.165,69.662 -53.325,-123.155 c -0.79,-1.826 -2.59,-3.007 -4.58,-3.007 -1.989,0 -3.789,1.182 -4.579,3.007 l -64.907004,149.901 -18.587,-42.922 c -0.791,-1.826 -2.59,-3.007 -4.58,-3.007 -1.99,0 -3.789,1.182 -4.58,3.007 L 0.41083579,216.98 c -0.668,1.543 -0.514,3.317 0.408,4.722 0.92300001,1.405 2.49100001,2.251 4.17100001,2.251 h 92.6580002 0.02 138.952004 69.493 c 1.68,0 3.248,-0.846 4.171,-2.251 0.923,-1.405 1.077,-3.18 0.41,-4.722 z m -298.105004,-3.008 38.728,-89.446 18.483,42.684 c 0.043,0.113 0.093,0.22 0.144,0.33 l 20.106,46.433 h -77.461 z m 88.336004,0 -21.004004,-48.506 64.049004,-147.919 85.051,196.425 z m 138.973,0 -32.584,-75.252 29.307,-67.68 61.895,142.932 z"
    id="path2"
    inkscape:connector-curvature="0"
-   style="fill:#00b050;fill-opacity:1" />
+   style="fill:#00b050;fill-opacity:1;stroke-width:30;stroke-miterlimit:4;stroke-dasharray:none" />
 <g
    id="g4"
    transform="translate(-1.6421493e-4,-43.576)">

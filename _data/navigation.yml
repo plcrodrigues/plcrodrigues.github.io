@@ -4,19 +4,19 @@ main:
   - title: "About me"
     url: /about/
 
-  - title: "Research"
+  - title: "RESEARCH"
     url: /research/
 
-  - title: "Publications"
+  - title: "PUBLICATION"
     url: /publication/
 
   # - title: "Talks"
   #   url: /talks/    
 
-  - title: "Code"
+  - title: "CODE"
     url: /code/
 
-  - title: "Teaching"
+  - title: "TEACHING"
     url: /teaching/    
         
   # - title: "Blog Posts"

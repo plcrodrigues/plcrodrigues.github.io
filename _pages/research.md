@@ -1,9 +1,10 @@
 ---
 permalink: /research/
-title: 
 excerpt: "Research"
 author_profile: true
 ---
+
+<h1>Research</h1>
 
 In this page I summarize some of the research questions that I've investigated 
 up to today. Please feel free to **<a href = "mailto: pedro.rodrigues@melix.org">contact me</a>** if you would like to discuss further some of these topics.

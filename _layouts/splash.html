@@ -8,17 +8,12 @@ layout: default
   {% include page__hero.html %}
 {% endif %}
 
-<div style="height:5%; margin-bottom:0px;">
-  <img src="/images/taillefer.png"/>
+<div style="border-bottom: 3px solid #00b050">
+  <img src="/images/osseau.png"/>
 </div>
 
-<div id="main" role="main" style="width: 75%; margin-top:1.5em;">
+<div id="main" role="main" style="width: 75%; margin-top:2.0em;">
   <article class="splash" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
-    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
-
     <section class="page__content" itemprop="text">
       {{ content }}
     </section>

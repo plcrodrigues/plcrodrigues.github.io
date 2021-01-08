@@ -9,7 +9,15 @@ author_profile: true
 
 # Publications
 
-The following list of publications is first divided into research topics and then organized in cronological order. You can check my profile at **<a href="https://scholar.google.com/citations?user=8Jiux08AAAAJ" target="_blank">Google scholar</a>** too.
+The following list of publications is first divided into research topics and then organized in cronological order. Topics are:
+<ul>
+  <li>Simulation-based inference</li>
+  <li>Transfer learning</li>
+  <li>Dimensionality reduction</li>
+  <li>Neural connectivity estimation</li>
+</ul>
+
+You can also check my profile at **<a href="https://scholar.google.com/citations?user=8Jiux08AAAAJ" target="_blank">Google scholar</a>** for a (probably) more updated list.
 
 ## Works on simulation-based inference 
 These publications are related to the research topic that I’ve been developping during my post-doc. Several collaborations are currently under progress with researchers from the University of Liège, Brown University and the ICTP in Italy.

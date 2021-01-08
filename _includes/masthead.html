@@ -1,42 +1,14 @@
 {% include base_path %}
 
-<!-- <div class="masthead" style="border-bottom: 3px solid #00b050">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <ul class="visible-links">
-          {% for link in site.data.navigation.main %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-              {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            {% if link.title == "About me" %}
-              <li><a href="{{ domain }}{{ link.url }}">
-                <img src="/images/mountains.svg" width="60px"/></a>
-              </li>
-              <li class="masthead__menu-item" style="font-size:1.0em;"><a href="{{ domain }}{{ link.url }}" style="color:#00b050; font-weight:bold;">HOME</a>
-              </li>              
-            {% else %}
-              <li class="masthead__menu-item" style="font-size:1.0em;"><a href="{{ domain }}{{ link.url }}" style="color:#00b050; font-weight:bold;">{{ link.title }}</a></li>              
-            {% endif %}
-          {% endfor %}
-        </ul>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
-    </div>
-  </div>
-</div> -->
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: 3px solid #00b050">
 
-  <a class="navbar-brand" href="#" style="margin-right: 40px; padding-left: 5%;"><img src="/images/mountains.svg" width="60px" style="margin-right:18px;"/><span style="font-weight:bold; font-size:0.95em; color:#00b050"></span></a>
+  <a class="navbar-brand" href="#" style="margin-right: 40px; padding-left: 2.5%;"><img src="/images/mountains.svg" width="60px" style="margin-right:18px;"/><span style="font-weight:bold; font-size:0.95em; color:#00b050"></span></a>
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-right: 5%">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-right: 2.5%">
     <ul class="navbar-nav ml-auto">
       {% for link in site.data.navigation.main %}
       {% if link.url contains 'http' %}
@@ -48,7 +20,12 @@
         <li class="nav-link" style="font-size:1.15em;"><a href="{{ domain }}{{ link.url }}" style="color:#00b050; font-weight:bold;">home</a>
         </li>              
       {% else %}
-        <li class="nav-link" style="font-size:1.15em;"><a href="{{ domain }}{{ link.url }}" style="color:#00b050; font-weight:bold;">{{ link.title }}</a></li>              
+        {% if link.title == "CV" %}
+        <a  target="_blank">
+          <li class="nav-link" style="font-size:1.15em;"><a href="https://plcrodrigues.github.io/files/cv.pdf" target="_blank" style="color:#00b050; font-weight:bold;">{{ link.title }}</a></li>              
+        {% else %}
+          <li class="nav-link" style="font-size:1.15em;"><a href="{{ domain }}{{ link.url }}" style="color:#00b050; font-weight:bold;">{{ link.title }}</a></li>              
+        {% endif %}
       {% endif %}
       {% endfor %}
 

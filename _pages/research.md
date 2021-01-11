@@ -6,11 +6,11 @@ author_profile: true
 
 <h1>Research</h1>
 
-In this page I summarize some of the research questions that I've investigated up to today. You can also check the <a href="/publications/" style="color:#FA2742; font-weight:bold;">publications</a> page for a full list of my published papers. Please feel free to contact me if you would like to discuss further some of these research topics; I'm always happy to discuss science with other people.
+In this page, I summarize some of the research topics that I've investigated up to today. You can also check the <a href="/publications/" style="color:#46B1C9; font-weight:bold;">publications</a> page for a full list of my published papers. Please feel free to contact me if you would like to discuss further some of these research topics.
 
 <div>
 <h2>Simulation-based inference 
-<a data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1" style="color:#FA2742; font-weight:bold; font-size:0.8em; vertical-align: middle">(see more)</a>
+<a data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1" style="color:#46B1C9; font-weight:bold; font-size:0.8em; vertical-align: middle">(see more)</a>
 </h2>
 <p>
 <a data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
@@ -23,7 +23,7 @@ Bayesian inference on modern complex simulator models is in general a difficult 
 
 <div>
 <h2>Exploring invariances of multivariate time series 
-<a data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2" style="color:#FA2742; font-weight:bold; font-size:0.8em; vertical-align: middle">(see more)</a>
+<a data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2" style="color:#46B1C9; font-weight:bold; font-size:0.8em; vertical-align: middle">(see more)</a>
 </h2>
 <p>
 <a data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
@@ -39,7 +39,7 @@ setups for measuring the same phenomenon.
 
 <div>
 <h2>Neural connectivity estimation 
-<a data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3" style="color:#FA2742; font-weight:bold; font-size:0.8em; vertical-align: middle">(see more)</a>
+<a data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3" style="color:#46B1C9; font-weight:bold; font-size:0.8em; vertical-align: middle">(see more)</a>
 </h2>
 <p>
 <a data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">

@@ -37,10 +37,11 @@
 
 <style>
 #main{max-width:1200px;}
-.page__content a:hover {color:#00b050; font-weight:bold; transition-delay:0s; text-decoration: none;}
+.page__content a:hover {color:#00b050; font-weight:bold; transition-delay:0s;}
+.page__content h2 {border-bottom: 3px solid #00b050}
 a{color:#363732}
 p{color:#363732}
-h2{font-size: 1.2em}
+h2{font-size: 1.2em;}
 h1{font-size: 1.7em; font-weight: bold; color:#00b050;}
 ol.split { list-style-type: none; }
 ol.split li:before{counter-increment: mycounter; content: counter(mycounter) ".\00A0\00A0"; color:#00b050; font-weight:bold}
@@ -48,4 +49,6 @@ ol.split li{text-indent: -1.3em;}
 ol.start { counter-reset: mycounter; }
 ol.start li, ol.continue li {list-style: none;}
 ol.start li:before, ol.continue li:before { content: counter(mycounter) ". "; counter-increment: mycounter; color:#00b050; font-weight:bold}
+ul.publi_list {list-style: none; padding: 0px;}
+li.publi_list :before {content: "\21B3"; margin: 0 0.5em; font-weight: bold;}
 </style>

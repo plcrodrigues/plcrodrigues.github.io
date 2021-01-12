@@ -7,7 +7,8 @@ author_profile: true
 
 {% include base_path %}
 
-# Publications
+<h1 style="margin-bottom:0.5em"><img src="/images/picto_publications.svg" width="60px" style="margin-right:15px">Publications</h1>
+
 <p style="margin-bottom:1em">The following list of publications is first divided into research topics and then organized in cronological order. Topics are (click to jump directly):
 </p>
 <ul class="publi_list">

@@ -4,7 +4,7 @@ excerpt: "Research"
 author_profile: true
 ---
 
-<h1>Research</h1>
+<h1 style="margin-bottom:0.5em"><img src="/images/picto_research.svg" width="60px" style="margin-right:15px">Research</h1>
 
 In this page, I summarize some of the research topics that I've investigated up to today. You can also check the <a href="/publications/" style="color:#46B1C9; font-weight:bold;">publications</a> page for a full list of my published papers. Please feel free to contact me if you would like to discuss further some of these research topics.
 

@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-# Code
+<h1 style="margin-bottom:0.5em"><img src="/images/picto_code.svg" width="60px" style="margin-right:15px">Code</h1>
 
 I am a strong believer that time spent sharing research code and datasets is never wasted. 
 Here below I list some of the codes and projects that I have worked on.

@@ -9,7 +9,7 @@ author_profile: true
 
 <h1 style="margin-bottom:0.5em"><img src="/images/picto_teaching.svg" width="80px" style="margin-right:15px">Teaching</h1>
 
-During my academic years I have had the opportunity and the <span style="color:#00b050">pleasure of teaching</span> classes on several different places under the supervision of great teachers and colleagues. Although the descriptions here below are all in english, I have also given classes in portuguese and french. 
+During my academic years I have had the opportunity and the <span style="font-weight:bold">pleasure of teaching</span> classes on several different places under the supervision of great teachers and colleagues. Although the descriptions here below are all in english, I have also given classes in portuguese and french. 
 
 <div class="container" style="padding-bottom:2em">
   <div class="row">

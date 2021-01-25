@@ -10,7 +10,7 @@ redirect_from:
 
 <h1 style="color:#00b050; text-align: center; font-size:26pt; margin-bottom:0.5em" >Olá, I'm Pedro.</h1>
 
-I am a post-doc researcher working at the <a href="https://team.inria.fr/parietal/" style="color:#00b050; font-weight:bold;" target="_blank">Parietal team</a> from Inria, France. My main research interests revolve around developing <span style="font-weight:bold">machine learning methods for the experimental sciences</span>. A particular topic that I've been investigating lately is simulation-based inference and how it can be applied to computational neuroscience. Please check my <a href="/research/" style="color:#00b050; font-weight:bold;">research page</a> for more information.
+I am a post-doc researcher working at the <a href="https://team.inria.fr/parietal/" style="color:#00b050; font-weight:bold;" target="_blank">Parietal team</a> from Inria, France. My main research interests revolve around developing <span style="font-weight:bold">machine learning methods for the experimental sciences</span>. A particular topic that I've been investigating lately is simulation-based inference and how it can be applied to computational neuroscience. Please feel free to contact me at <span style="font-weight:bold">pedro.rodrigues at melix dot org</span>.
 
 <!-- <div class="container">
   <div class="row">

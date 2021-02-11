@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Pedro L. C. Rodrigues"
 title_separator          : "-"
 name                     : &name "Pedro L. C. Rodrigues"
-description              : &description "Post-doc researcher at INRIA-Saclay"
+description              : &description "Post-doc researcher at Inria-Saclay"
 url                      : https://plcrodrigues.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "plcrodrigues/plcrodrigues.github.io"
@@ -78,7 +78,7 @@ analytics:
 author:
   name             : "Pedro L. C. Rodrigues"
   avatar           : "profile.png"
-  bio              : "Post-doc researcher at INRIA"
+  bio              : "Post-doc researcher at Inria"
   location         : "Lyon, France"
   employer         :
   pubmed           : 

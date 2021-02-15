@@ -23,9 +23,9 @@ You can also check my profile at <a href="https://scholar.google.com/citations?u
 <h2><a id="sbi">Works on simulation-based inference</a></h2>
 These publications are related to the research topic that I’ve been developping during my post-doc. Several collaborations are currently under progress with researchers from the University of Liège, Brown University, and the ICTP in Italy.
 <ol class="split start" style="margin-top:1em">
-  <li> <u>PLC Rodrigues</u>, Thomas Moreau, Gilles Louppe, A Gramfort. “<i>Leveraging global parameters for flow-based neural posterior estimation</i>”.  Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/" target="_blank">arXiv:XXXX.XXXXX</a>.</li>
+  <li> <u>PLC Rodrigues</u>, Thomas Moreau, Gilles Louppe, A Gramfort. “<i>Leveraging global parameters for flow-based neural posterior estimation</i>”.  Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2102.06477" target="_blank">arXiv:2102.06477</a>.</li>
   <li> <u>PLC Rodrigues</u> and A Gramfort. “<i>Learning summary features of time series likelihood free inference</i>”. Workshop on Machine Learning and the Physical Sciences at the 34th conference on NeurIPS. Online conference. December, 2020. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2012.02807" target="_blank">arXiv:2012.02807</a>.</li>
-  <li>M Jallais, <u>PLC Rodrigues</u>, A Gramfort, D Wassermann. “<i>Cytoarchitecture measurements in brain gray matter using likelihood-free Inference</i>”. December, 2020. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.inria.fr/hal-03090959" target="_blank">hal-03090959</a>.</li>
+  <li>M Jallais, <u>PLC Rodrigues</u>, A Gramfort, D Wassermann. “<i>Cytoarchitecture measurements in brain gray matter using likelihood-free Inference</i>”. Accepted at IPMI2021. December, 2020. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.inria.fr/hal-03090959" target="_blank">hal-03090959</a>.</li>
 </ol>
 
 <div id="transfer_learning">

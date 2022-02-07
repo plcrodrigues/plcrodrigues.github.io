@@ -27,7 +27,7 @@ Welcome to the webpage of the Statistical Analysis and Document Mining (SADM) co
 
 **Textbooks:**
 
-- Booklet of the course [[pdf]()] written by M. Blum, J-B Durand, and M. Amini
+- Booklet of the course [[pdf](https://plcrodrigues.github.io/sadm/booklet.pdf)] written by M. Blum, J-B Durand, and M. Amini
 - Students may also consider reading some chapters from James et al. (2022) "Introduction to statistical learning with applications to R" which is freely (and legally) available [[here](https://www.statlearning.com/)]
 - Another excellent reference is Hastie et al. (2017) "Elements of Statistical Learning" which is freely (and legally) available [[here](https://hastie.su.domains/ElemStatLearn/)]
 
@@ -35,21 +35,21 @@ Welcome to the webpage of the Statistical Analysis and Document Mining (SADM) co
 
 Slides
 
-- CM1: Introduction and multiple linear regression [[pdf]()] (31-January-2022)
+- CM1: Introduction and multiple linear regression [[pdf](https://plcrodrigues.github.io/sadm/CM1-slides.pdf)] (31-January-2022)
 
 ## Tutorials (TD)
 
 Exercise worksheets
 
-- TD1: Multiple linear regression [[pdf]()] (31-January-2022)
+- TD1: Multiple linear regression [[pdf](https://plcrodrigues.github.io/sadm/TD1-text.pdf)] (31-January-2022)
 
 ## Lab works (TP)
 
 Exercise worksheets
 
 - TP1: Multiple linear regression (07-February-2022)
-  - text [[pdf]()]
-  - prostate dataset [[data]()] and reference [[pdf]()]
+  - text [[pdf](https://plcrodrigues.github.io/sadm/TP1-text.pdf)]
+  - prostate dataset [[data](https://plcrodrigues.github.io/sadm/TP1-prostate.data)] and reference [[pdf]()]
 
 Rules
 
@@ -62,13 +62,13 @@ Rules
 
 Materials by Pedro Rodrigues:
 
-- Week 2: Introduction to R and Rstudio with slides [[pdf]()] and script [[R]()] (07-February-2022)
+- Week 2: Introduction to R and Rstudio with slides [[pdf](https://plcrodrigues.github.io/sadm/OH1-slides.pdf)] and script [[R](https://plcrodrigues.github.io/sadm/OH1-script.R)] (07-February-2022)
 
 ## Complementary courses for master students
 
 Materials by Daria Bystrova:
 
-- Week 1: Theory [[pdf]()] and practical example [[pdf]()] (01-February-2022)
+- Week 1: Theory [[pdf](https://plcrodrigues.github.io/sadm/CC-01-part-1.pdf)] and practical example [[pdf](https://plcrodrigues.github.io/sadm/CC-01-part-2.pdf)] (01-February-2022)
 
 ## More useful resources
 

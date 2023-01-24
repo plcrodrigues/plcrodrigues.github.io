@@ -1,609 +1,692 @@
-<!doctype html>
-<html>
-<head>
-<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-
-<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
-.mac-os-11 { --title-bar-height: 28px; }
-html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
-iframe { margin: auto; }
-a.url { word-break: break-all; }
-a:active, a:hover { outline: 0px; }
-.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
-#write.first-line-indent p { text-indent: 2em; }
-#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
-#write.first-line-indent li { margin-left: 2em; }
-.for-image #write { padding-left: 8px; padding-right: 8px; }
-body.typora-export { padding-left: 30px; padding-right: 30px; }
-.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
-.typora-export .task-list-item input { pointer-events: none; }
-@media screen and (max-width: 500px) { 
-  body.typora-export { padding-left: 0px; padding-right: 0px; }
-  #write { padding-left: 20px; padding-right: 20px; }
-  .CodeMirror-sizer { margin-left: 0px !important; }
-  .CodeMirror-gutters { display: none !important; }
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Statistical Analysis and Document Mining — 2023</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
 }
-#write li > figure:last-child { margin-bottom: 0.5rem; }
-#write ol, #write ul { position: relative; }
-img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
-button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
-input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
-*, ::after, ::before { box-sizing: border-box; }
-#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
-#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
-p { line-height: inherit; }
-h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
-p { orphans: 4; }
-h1 { font-size: 2rem; }
-h2 { font-size: 1.8rem; }
-h3 { font-size: 1.6rem; }
-h4 { font-size: 1.4rem; }
-h5 { font-size: 1.2rem; }
-h6 { font-size: 1rem; }
-.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
-.hidden { display: none; }
-.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
-a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
-sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
-#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
-figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
-figure > table { margin: 0px; }
-tr { break-inside: avoid; break-after: auto; }
-thead { display: table-header-group; }
-table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
-table.md-table td { min-width: 32px; }
-.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
-.CodeMirror-linenumber { }
-.CodeMirror { text-align: left; }
-.CodeMirror-placeholder { opacity: 0.3; }
-.CodeMirror pre { padding: 0px 4px; }
-.CodeMirror-lines { padding: 0px; }
-div.hr:focus { cursor: none; }
-#write pre { white-space: pre-wrap; }
-#write.fences-no-line-wrapping pre { white-space: pre; }
-#write pre.ty-contain-cm { white-space: normal; }
-.CodeMirror-gutters { margin-right: 4px; }
-.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
-.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
-#write .md-fences.mock-cm { white-space: pre-wrap; }
-.md-fences.md-fences-with-lineno { padding-left: 0px; }
-#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
-.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
-.CodeMirror-line, twitterwidget { break-inside: avoid; }
-.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
-.footnotes + .footnotes { margin-top: 0px; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
-li div { padding-top: 0px; }
-blockquote { margin: 1rem 0px; }
-li .mathjax-block, li p { margin: 0.5rem 0px; }
-li blockquote { margin: 1rem 0px; }
-li { margin: 0px; position: relative; }
-blockquote > :last-child { margin-bottom: 0px; }
-blockquote > :first-child, li > :first-child { margin-top: 0px; }
-.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
-#write .footnote-line { white-space: pre-wrap; }
-@media print { 
-  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
-  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
-  .typora-export * { -webkit-print-color-adjust: exact; }
-  .typora-export #write { break-after: avoid; }
-  .typora-export #write::after { height: 0px; }
-  .is-mac table { break-inside: avoid; }
-  .typora-export-show-outline .typora-export-sidebar { display: none; }
-}
-.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
-a img, img a { cursor: pointer; }
-pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
-p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
-#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
-p > .md-image:only-child { display: inline-block; width: 100%; }
-#write .MathJax_Display { margin: 0.8em 0px 0px; }
-.md-math-block { width: 100%; }
-.md-math-block:not(:empty)::after { display: none; }
-.MathJax_ref { fill: currentcolor; }
-[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
-.md-task-list-item { position: relative; list-style-type: none; }
-.task-list-item.md-task-list-item { padding-left: 0px; }
-.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
-.math { font-size: 1rem; }
-.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
-.md-toc-content { position: relative; margin-left: 0px; }
-.md-toc-content::after, .md-toc::after { display: none; }
-.md-toc-item { display: block; color: rgb(65, 131, 196); }
-.md-toc-item a { text-decoration: none; }
-.md-toc-inner:hover { text-decoration: underline; }
-.md-toc-inner { display: inline-block; cursor: pointer; }
-.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
-.md-toc-h2 .md-toc-inner { margin-left: 2em; }
-.md-toc-h3 .md-toc-inner { margin-left: 4em; }
-.md-toc-h4 .md-toc-inner { margin-left: 6em; }
-.md-toc-h5 .md-toc-inner { margin-left: 8em; }
-.md-toc-h6 .md-toc-inner { margin-left: 10em; }
-@media screen and (max-width: 48em) { 
-  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
-  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
-  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
-  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
-}
-a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
-.footnote-line a:not(.reversefootnote) { color: inherit; }
-.md-attr { display: none; }
-.md-fn-count::after { content: "."; }
-code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
-.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
-code { text-align: left; }
-a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
-.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
-.md-diagram-panel > svg { max-width: 100%; }
-[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
-[lang="mermaid"] .node text { font-size: 1rem; }
-table tr th { border-bottom-width: 0px; }
-video { max-width: 100%; display: block; margin: 0px auto; }
-iframe { max-width: 100%; width: 100%; border: none; }
-.highlight td, .highlight tr { border: 0px; }
-mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
-.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
-.md-expand mark .md-meta { opacity: 0.3 !important; }
-mark .md-meta { color: rgb(0, 0, 0); }
-@media print { 
-  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
-}
-.md-diagram-panel .messageText { stroke: none !important; }
-.md-diagram-panel .start-state { fill: var(--node-fill); }
-.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
-.md-fences.md-fences-math { font-size: 1em; }
-.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
-.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
-.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
-.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
-.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
-.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
-@media screen and (max-width: 1024px) { 
-  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
-}
-@media screen and (max-width: 800px) { 
-  .typora-export-sidebar { display: none; }
-}
-.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
-.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
-.outline-content strong { font-weight: 400; }
-.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
-.outline-expander::before { content: ''; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
-.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
-.outline-expander:hover::before { content: ''; }
-.outline-h1 > .outline-item { padding-left: 0px; }
-.outline-h2 > .outline-item { padding-left: 1em; }
-.outline-h3 > .outline-item { padding-left: 2em; }
-.outline-h4 > .outline-item { padding-left: 3em; }
-.outline-h5 > .outline-item { padding-left: 4em; }
-.outline-h6 > .outline-item { padding-left: 5em; }
-.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
-.outline-label:hover { text-decoration: underline; }
-.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
-.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
-.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
-.outline-item-open > .outline-item > .outline-expander::before { content: ''; }
-.outline-children { display: none; }
-.info-panel-tab-wrapper { display: none; }
-.outline-item-open > .outline-children { display: block; }
-.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
-.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
-.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
-.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: '−'; }
-.typora-export-collapse-outline .outline-children { display: none; }
-.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
-.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
-.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
-.md-inline-math-container mjx-container { zoom: 0.95; }
-
-
-:root {
-    --side-bar-bg-color: #fafafa;
-    --control-text-color: #777;
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
 }
 
-@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
-
-/* open-sans-regular - latin-ext_latin */
-  /* open-sans-italic - latin-ext_latin */
-    /* open-sans-700 - latin-ext_latin */
-    /* open-sans-700italic - latin-ext_latin */
-  html {
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
 }
 
 body {
-    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
-    color: rgb(51, 51, 51);
-    line-height: 1.6;
+	line-height: 1.5;
+	white-space: pre-wrap;
 }
 
-#write {
-    max-width: 860px;
-  	margin: 0 auto;
-  	padding: 30px;
-    padding-bottom: 100px;
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
 }
 
-@media only screen and (min-width: 1400px) {
-	#write {
-		max-width: 1024px;
-	}
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
 }
 
-@media only screen and (min-width: 1800px) {
-	#write {
-		max-width: 1200px;
-	}
-}
-
-#write > ul:first-child,
-#write > ol:first-child{
-    margin-top: 30px;
-}
-
-a {
-    color: #4183C4;
-}
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    line-height: 1.4;
-    cursor: text;
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
 }
-h1:hover a.anchor,
-h2:hover a.anchor,
-h3:hover a.anchor,
-h4:hover a.anchor,
-h5:hover a.anchor,
-h6:hover a.anchor {
-    text-decoration: none;
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
 }
-h1 tt,
-h1 code {
-    font-size: inherit;
-}
-h2 tt,
-h2 code {
-    font-size: inherit;
-}
-h3 tt,
-h3 code {
-    font-size: inherit;
-}
-h4 tt,
-h4 code {
-    font-size: inherit;
-}
-h5 tt,
-h5 code {
-    font-size: inherit;
-}
-h6 tt,
-h6 code {
-    font-size: inherit;
-}
+
 h1 {
-    font-size: 2.25em;
-    line-height: 1.2;
-    border-bottom: 1px solid #eee;
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
 }
+
 h2 {
-    font-size: 1.75em;
-    line-height: 1.225;
-    border-bottom: 1px solid #eee;
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
 }
-
-/*@media print {
-    .typora-export h1,
-    .typora-export h2 {
-        border-bottom: none;
-        padding-bottom: initial;
-    }
-
-    .typora-export h1::after,
-    .typora-export h2::after {
-        content: "";
-        display: block;
-        height: 100px;
-        margin-top: -96px;
-        border-top: 1px solid #eee;
-    }
-}*/
 
 h3 {
-    font-size: 1.5em;
-    line-height: 1.43;
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
 }
-h4 {
-    font-size: 1.25em;
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
 }
-h5 {
-    font-size: 1em;
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
 }
-h6 {
-   font-size: 1em;
-    color: #777;
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
 }
-p,
-blockquote,
-ul,
-ol,
-dl,
-table{
-    margin: 0.8em 0;
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
 }
-li>ol,
-li>ul {
-    margin: 0 0;
+
+mark {
+	background-color: transparent;
 }
+
+.indented {
+	padding-left: 1.5em;
+}
+
 hr {
-    height: 2px;
-    padding: 0;
-    margin: 16px 0;
-    background-color: #e7e7e7;
-    border: 0 none;
-    overflow: hidden;
-    box-sizing: content-box;
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
 }
 
-li p.first {
-    display: inline-block;
+img {
+	max-width: 100%;
 }
-ul,
-ol {
-    padding-left: 30px;
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
 }
-ul:first-child,
-ol:first-child {
-    margin-top: 0;
+
+@page {
+	margin: 1in;
 }
-ul:last-child,
-ol:last-child {
-    margin-bottom: 0;
+
+.collection-content {
+	font-size: 0.875rem;
 }
-blockquote {
-    border-left: 4px solid #dfe2e5;
-    padding: 0 15px;
-    color: #777777;
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
 }
-blockquote blockquote {
-    padding-right: 0;
+
+.column {
+	padding: 0 1em;
 }
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
 table {
-    padding: 0;
-    word-break: initial;
-}
-table tr {
-    border: 1px solid #dfe2e5;
-    margin: 0;
-    padding: 0;
-}
-table tr:nth-child(2n),
-thead {
-    background-color: #f8f8f8;
-}
-table th {
-    font-weight: bold;
-    border: 1px solid #dfe2e5;
-    border-bottom: 0;
-    margin: 0;
-    padding: 6px 13px;
-}
-table td {
-    border: 1px solid #dfe2e5;
-    margin: 0;
-    padding: 6px 13px;
-}
-table th:first-child,
-table td:first-child {
-    margin-top: 0;
-}
-table th:last-child,
-table td:last-child {
-    margin-bottom: 0;
+	border-left: none;
+	border-right: none;
 }
 
-.CodeMirror-lines {
-    padding-left: 4px;
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
 }
 
-.code-tooltip {
-    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
-    border-top: 1px solid #eef2f2;
+th {
+	color: rgba(55, 53, 47, 0.6);
 }
 
-.md-fences,
-code,
-tt {
-    border: 1px solid #e7eaed;
-    background-color: #f8f8f8;
-    border-radius: 3px;
-    padding: 0;
-    padding: 2px 4px 0px 4px;
-    font-size: 0.9em;
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
 }
 
 code {
-    background-color: #f3f4f4;
-    padding: 0 2px 0 2px;
+	color: #eb5757;
 }
 
-.md-fences {
-    margin-bottom: 15px;
-    margin-top: 15px;
-    padding-top: 8px;
-    padding-bottom: 6px;
+.code {
+	padding: 1.5em 1em;
 }
 
-
-.md-task-list-item > input {
-  margin-left: -1.3em;
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
 }
 
-@media print {
-    html {
-        font-size: 13px;
-    }
-    table,
-    pre {
-        page-break-inside: avoid;
-    }
-    pre {
-        word-wrap: break-word;
-    }
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
 }
 
-.md-fences {
-	background-color: #f8f8f8;
-}
-#write pre.md-meta-block {
-	padding: 1rem;
-    font-size: 85%;
-    line-height: 1.45;
-    background-color: #f7f7f7;
-    border: 0;
-    border-radius: 3px;
-    color: #777777;
-    margin-top: 0 !important;
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
 }
 
-.mathjax-block>.code-tooltip {
-	bottom: .375rem;
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
 }
 
-.md-mathjax-midline {
-    background: #fafafa;
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
 }
 
-#write>h3.md-focus:before{
-	left: -1.5625rem;
-	top: .375rem;
-}
-#write>h4.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-#write>h5.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-#write>h6.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-.md-image>.md-meta {
-    /*border: 1px solid #ddd;*/
-    border-radius: 3px;
-    padding: 2px 0px 0px 4px;
-    font-size: 0.9em;
-    color: inherit;
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
 }
 
-.md-tag {
-    color: #a7a7a7;
-    opacity: 1;
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-.md-toc { 
-    margin-top:20px;
-    padding-bottom:20px;
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
 }
 
-.sidebar-tabs {
-    border-bottom: none;
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
 }
 
-#typora-quick-open {
-    border: 1px solid #ddd;
-    background-color: #f8f8f8;
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
 }
 
-#typora-quick-open-item {
-    background-color: #FAFAFA;
-    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
-    border-style: solid;
-    border-width: 1px;
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
 }
 
-/** focus mode */
-.on-focus-mode blockquote {
-    border-left-color: rgba(85, 85, 85, 0.12);
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 
-header, .context-menu, .megamenu-content, footer{
-    font-family: "Segoe UI", "Arial", sans-serif;
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-
-.file-node-content:hover .file-node-icon,
-.file-node-content:hover .file-node-open-state{
-    visibility: visible;
-}
-
-.mac-seamless-mode #typora-sidebar {
-    background-color: #fafafa;
-    background-color: var(--side-bar-bg-color);
-}
-
-.md-lang {
-    color: #b4654d;
-}
-
-/*.html-for-mac {
-    --item-hover-bg-color: #E6F0FE;
-}*/
-
-#md-notification .btn {
-    border: 0;
-}
-
-.dropdown-menu .divider {
-    border-color: #e5e5e5;
-    opacity: 0.4;
-}
-
-.ty-preferences .window-content {
-    background-color: #fafafa;
-}
-
-.ty-preferences .nav-group-item.active {
-    color: white;
-    background: #999;
-}
-
-.menu-item-container a.menu-style-btn {
-    background-color: #f5f8fa;
-    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
-}
-
-
- @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
-</style><title>index</title>
-</head>
-<body class='typora-export'><div class='typora-export-content'>
-<div id='write'  class=''><p><span>Welcome to the webpage of the Statistical Analysis and Document Mining (SADM) course.</span></p><h2 id='general-information'><span>General information</span></h2><p><strong><span>Teaching team:</span></strong></p><ul><li><span>Pedro L. C. Rodrigues [CM for all] [TD for Group 1] [TP for Group 1] (pedro.rodrigues@inria.fr)</span></li><li><span>Romain Rombourg [TD for Group 2] [TP for Group 2] (romain.rombourg@univ-grenoble-alpes.fr)</span></li><li><span>Daria Bystrova [Complementary courses] (daria.bystrova@inria.fr)</span></li></ul><p><strong><span>Schedule for 2022:</span></strong></p><ul><li><strong><span>Regression - CM 5h, TP 6h, TD 1h</span></strong>
-<span>Week 01 (31-January-2022): Introduction and multiple linear regression [CM1] and [TD1]</span>
-<span>Week 02 (07-February-2022): Bias-variance tradeoff, cross-validation, and model selection [CM2] and [TP1]</span>
-<span>Week 03 (14-February-2022): Principal component analysis [CM3] and [TP1]</span>
-<span>Week 04 (28-February-2022): Principal components regression [TP2]</span></li><li><strong><span>Classification - CM 6h, TP 6h, TD 1h</span></strong>
-<span>Week 05 (07-March-2022): Linear classification [CM4] and [TD2]</span>
-<span>Week 06 (14-March-2022): Naive Bayes [CM5] and [TP3]</span>
-<span>Week 07 (21-March-2022): Document representation and classification [CM6]</span>
-<span>Week 08 (28-March-2022): Classification [TP4]</span></li><li><strong><span>Graphs - CM 4.5h, TP 4.5h</span></strong>
-<span>Week 09 (04-April-2022): Introduction to graphs [CM7]</span>
-<span>Week 10 (11-April-2022): Graph clustering [CM8] and [TP5]</span>
-<span>Week 11 (25-April-2022): Text mining and graphs [TP5]</span></li></ul><p><strong><span>Textbooks:</span></strong></p><ul><li><span>Booklet of the course [</span><a href='https://plcrodrigues.github.io/sadm/booklet.pdf'><span>pdf</span></a><span>] written by M. Blum, J-B Durand, and M. Amini</span></li><li><span>Students may also consider reading some chapters from James et al. (2022) &quot;Introduction to statistical learning with applications to R&quot; which is freely (and legally) available [</span><a href='https://www.statlearning.com/'><span>here</span></a><span>]</span></li><li><span>Another excellent reference is Hastie et al. (2017) &quot;Elements of Statistical Learning&quot; which is freely (and legally) available [</span><a href='https://hastie.su.domains/ElemStatLearn/'><span>here</span></a><span>]</span></li></ul><h2 id='lectures-cm'><span>Lectures (CM)</span></h2><p><span>Slides</span></p><ul><li><span>CM1: Introduction and multiple linear regression [</span><a href='https://plcrodrigues.github.io/sadm/CM1-slides.pdf'><span>pdf</span></a><span>] (31-January-2022)</span></li></ul><h2 id='tutorials-td'><span>Tutorials (TD)</span></h2><p><span>Exercise worksheets</span></p><ul><li><span>TD1: Multiple linear regression [</span><a href='https://plcrodrigues.github.io/sadm/TD1-text.pdf'><span>pdf</span></a><span>] (31-January-2022)</span></li></ul><h2 id='lab-works-tp'><span>Lab works (TP)</span></h2><p><span>Exercise worksheets</span></p><ul><li><p><span>TP1: Multiple linear regression (07-February-2022)</span></p><ul><li><span>text [</span><a href='https://plcrodrigues.github.io/sadm/TP1-text.pdf'><span>pdf</span></a><span>]</span></li><li><span>prostate dataset [</span><a href='https://plcrodrigues.github.io/sadm/TP1-prostate.data'><span>data</span></a><span>] and reference [</span><a href=''><span>pdf</span></a><span>]</span></li></ul></li></ul><p><span>Rules</span></p><ul><li><span>Reports should be written in </span><strong><span>english</span></strong><span>.</span></li><li><span>Lab works are to be done by groups of three students. A report has to be uploaded on Teide at the end of each thematic group of sessions (see deadlines on Teide). Use RMarkdown knitted html. The grade obtained on reports counts as half the final grade.</span></li><li><span>Analysis and figures are to be produced with the R software. </span></li><li><span>Graphical representations are essential in statistics. Each figure must have its title, legend, and the axes should have their legends too. Each figure has to be explained (what stands in the figure?) commented and referred to in the report (using its number: &quot;We can see from Fig. 3 that...&quot;.</span></li></ul><h2 id='office-hours-oh'><span>Office Hours (OH)</span></h2><p><span>Materials by Pedro Rodrigues:</span></p><ul><li><span>Week 2: Introduction to R and Rstudio with slides [</span><a href='https://plcrodrigues.github.io/sadm/OH1-slides.pdf'><span>pdf</span></a><span>] and script [</span><a href='https://plcrodrigues.github.io/sadm/OH1-script.R'><span>R</span></a><span>] (07-February-2022)</span></li></ul><h2 id='complementary-courses-for-master-students'><span>Complementary courses for master students</span></h2><p><span>Materials by Daria Bystrova:</span></p><ul><li><span>Week 1: Theory [</span><a href='https://plcrodrigues.github.io/sadm/CC-01-part-1.pdf'><span>pdf</span></a><span>] and practical example [</span><a href='https://plcrodrigues.github.io/sadm/CC-01-part-2.pdf'><span>pdf</span></a><span>] (01-February-2022)</span></li></ul><h2 id='more-useful-resources'><span>More useful resources</span></h2><ul><li><p><span>A demonstration for the bias-variance decomposition [</span><a href='https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote12.html'><span>video</span></a><span>]</span></p></li><li><p><span>The overfitting-underfitting tradeoff in a model that generalizes [</span><a href='https://www.youtube.com/watch?v=cBa9E6M9JCs'><span>video</span></a><span>]</span></p></li><li><p><span>A very intuitive explanation for PCA [</span><a href='https://stats.stackexchange.com/a/140579'><span>link</span></a><span>]</span></p></li><li><p><span>Supporting R scripts: </span></p><ul><li><a href=''><span>Polynomial regression: overfitting and variable selection by cross-validation</span></a></li><li><a href=''><span>USArrests data: variable selection by AIC </span></a></li><li><span>Principal components analysis (</span><a href=''><span>scores and loadings on USArrests data</span></a><span>)</span></li><li><span>Principal components analysis (</span><a href=''><span>scores on olympics data</span></a><span>)</span></li><li><span>Classification with </span><a href=''><span>logistic regression</span></a></li></ul></li></ul><ul><li><p><span>R software:</span></p><ul><li><a href=''><span>Introduction to R (in English)</span></a></li><li><a href=''><span>Introduction to R (in French)</span></a></li><li><a href='http://www.r-project.org/'><span>Webpage of R software</span></a></li><li><a href='https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf'><span>RMarkdown cheatsheet</span></a></li><li><a href='http://www.math.csi.cuny.edu/Statistics/R/simpleR/index.html'><span>Using R for Introductory Statistics</span></a><span>: a tutorial in R with ANOVA and linear regression (and other)</span></li><li><a href=''><span>Most useful R functions: a reference</span></a></li></ul></li></ul></div></div>
-</body>
-</html>
+	
+</style></head><body><article id="49c91d35-13d2-4e87-8c5e-ad6fb20a8c63" class="page sans"><header><h1 class="page-title">Statistical Analysis and Document Mining — 2023</h1></header><div class="page-body"><h3 id="cc945dbc-d169-4685-8322-fb9fdb25d8ce" class="">Team:</h3><ul id="19805b46-597b-417f-bb87-6822eb785147" class="bulleted-list"><li style="list-style-type:disc">Pedro L. C. Rodrigues — pedro.rodrigues@inria.fr (CM, TD, and TP)</li></ul><ul id="4b2ddfa6-a2f5-4145-9a33-24896dc68cf0" class="bulleted-list"><li style="list-style-type:disc">Jacopo Iollo — jacopo.iollo@inria.fr (TD and TP)</li></ul><ul id="86034132-eb42-46c6-a75e-5c6c69159b9e" class="bulleted-list"><li style="list-style-type:disc">Trung Tin Nguyen — trung-tin.nguyen@inria.fr (CC)</li></ul><hr id="1efb6f83-9dbb-4a73-af7c-bd5890679df9"/><h3 id="e32d4640-4947-4686-a7fe-ef9eaa2681dd" class="">Main course schedule:</h3><p id="d7ca0c4b-e429-48a9-96b3-d9e47c3cba1d" class="">We will meet every week on Monday afternoon, from 15h30 to 18h30.</p><p id="dd53a28a-65c5-48e9-ac95-486a611e5d1e" class="">Each time we will have a 1h30 CM and then a 1h30 TD or TP, as detailed below.</p><ul id="67612bbe-36f2-4be9-b1b9-bbe7513df192" class="bulleted-list"><li style="list-style-type:disc"><strong><mark class="highlight-teal">Week 1 (30-January 2023)</mark></strong>
+👨‍🏫 CM1: Introduction, simple linear regression, multivariate statistics [<a href="https://cloud.univ-grenoble-alpes.fr/s/JAejH6XakRqHWCX">pdf</a>]
+✍🏻 TD1: Exercises with basic results of multivariate statistics [<a href="https://cloud.univ-grenoble-alpes.fr/s/TEfEAHR7ZAe58Sf">pdf</a>]</li></ul><ul id="79b4f85d-d6f1-4962-a94b-98f45c91bbd8" class="bulleted-list"><li style="list-style-type:disc"><strong><mark class="highlight-teal">Week 2 (06-February 2023)</mark></strong>
+👨‍🏫 CM2: Multiple linear regression
+🖥 TP1: Analysis of prostate cancer data</li></ul><ul id="5c5aa15c-287a-4d2e-b45e-c924fa37be91" class="bulleted-list"><li style="list-style-type:disc"><strong><mark class="highlight-teal">Week 3 (20-February 2023)</mark></strong>
+👨‍🏫 CM3: Cross-validation, model selection, bias-variance
+🖥 TP1: Analysis of prostate cancer data </li></ul><ul id="7b4ac993-24fd-45fd-bb3b-69f913552cda" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-teal"><strong>Week 4 (27-February 2023)</strong></mark>
+👨‍🏫 CM4: Principal component analysis
+✍🏻 TD2: Exercises on principal component analysis</li></ul><ul id="0dacc512-32d3-4907-96d7-9a851887b649" class="bulleted-list"><li style="list-style-type:disc"><strong><mark class="highlight-teal">Week 5 (06-March 2023)</mark></strong>
+👨‍🏫 CM5: Linear classification — Discriminative approach
+🖥 TP2: Principal components regression in genetics</li></ul><ul id="d385ee3d-7508-4da3-9b5f-471a7dd9c20d" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-teal"><strong>Week 6 (13-March 2023)</strong></mark>
+👨‍🏫 CM6: Linear classification — Generative approach
+✍🏻 TD3: Exercises on classification</li></ul><ul id="6eb891f1-5b7c-4a33-a870-d67306368b01" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-teal"><strong>Week 7 (20-March 2023)</strong></mark>
+👨‍🏫 CM7: Performance metrics, overfitting
+🖥 TP2: Principal components regression in genetics</li></ul><ul id="3b7c2d0a-2d93-4262-8a5a-b5dc333463e6" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-teal"><strong>Week 8 (27-March 2023)</strong></mark>
+👨‍🏫 CM8: Applications to text mining and classification
+🖥 TP3: Benchmarking classification methods on real data</li></ul><ul id="ceb9aa94-0163-447d-8dcf-a1a3c08f2383" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-teal"><strong>Week 9 (03-April 2023)</strong></mark>
+👨‍🏫 CM9: Introduction to graph theory
+🖥 TP3: Benchmarking classification methods on real data</li></ul><ul id="fa097354-1295-4b07-9a20-dca638b63665" class="bulleted-list"><li style="list-style-type:disc"><strong><mark class="highlight-teal">Week 10 (17-April 2023)</mark></strong>
+👨‍🏫 CM10: Community detection in graphs (Part 1)
+🖥 TP4: Graph mining and community detection</li></ul><ul id="52d08fba-6eae-4f09-b76b-639cfe3f1bec" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-teal"><strong>Week 11 (24-April 2023)</strong></mark>
+👨‍🏫 CM11: Community detection in graphs (Part 2)
+🖥 TP4: Graph mining and community detection</li></ul><hr id="7168d266-1e35-47f6-8487-b5f4b49f7245"/><h3 id="9102f43a-e581-4fbe-8cd3-5df797b1ea37" class="">Textbooks:</h3><ul id="7172e710-7e23-4cfe-b2c7-3e4a9104cb4f" class="bulleted-list"><li style="list-style-type:disc">Our course has an official booklet available [<a href="https://cloud.univ-grenoble-alpes.fr/s/iTtXPTdLpyMwBtN">here</a>]</li></ul><ul id="9de5cd48-2c23-4927-a647-be5bea0d15ff" class="bulleted-list"><li style="list-style-type:disc">Students should also consider reading some chapters from James et al. (2022) <em>&quot;Introduction to statistical learning with applications to R&quot;</em> which is freely (and legally) available [<a href="https://www.statlearning.com/">here</a>]</li></ul><ul id="8f352da7-3944-4b94-be4f-ef0411c33b65" class="bulleted-list"><li style="list-style-type:disc">Another excellent reference is Hastie et al. (2017) <em>&quot;Elements of Statistical Learning&quot;</em> which is freely (and legally) available [<a href="https://hastie.su.domains/ElemStatLearn/">here</a>]</li></ul><hr id="31d9d651-40c4-4729-83b8-849d0e0eaa0e"/><h3 id="1fb8d946-0208-4eda-aa35-ddc2daf4bb8f" class="">Articles to read during the semester:</h3><p id="3d3f7735-1bd6-4054-8d16-26af3f3a1d67" class="">You are invited to read three seminal papers on topics related to our class during the semester.</p><ul id="1c86faa0-74e5-4c77-979a-7700cfb6ec2f" class="bulleted-list"><li style="list-style-type:disc">Leo Breiman — <em>“Statistical modeling: the two cultures”</em> (2001) available [<a href="http://www2.math.uu.se/~thulin/mm/breiman.pdf">here</a>]</li></ul><ul id="d3962640-688d-407b-aa48-3e2a71edcd34" class="bulleted-list"><li style="list-style-type:disc">Andrew Ng — “<em>On Discriminative vs. Generative Classifiers: A comparison of logistic regression and naive Bayes</em>” (2001) available [<a href="https://papers.nips.cc/paper/2001/file/7b7a53e239400a13bd6be6c91c4f6c4e-Paper.pdf">here</a>]</li></ul><ul id="c3fad16a-993c-457e-9975-36531f389618" class="bulleted-list"><li style="list-style-type:disc">Mark Newman — <em>“Modularity and community structure in networks” </em>(2006) available [<a href="https://www.pnas.org/doi/pdf/10.1073/pnas.0601602103">here</a>]</li></ul><p id="838fb8eb-4e47-456e-900f-6f2901e26e2b" class="">Our goal with this is to provide you with a first experience of reading a scientific article in statistics, which is a fundamental part of doing research later in life. </p><p id="c3952b8b-023b-4c3c-9e05-afa74972e6b3" class="">Please note that <strong>one week before the final exam </strong>we will tell you which of the papers will serve as the topic of a few questions we’re going to ask in the exam.</p><hr id="5088de49-2374-443f-aca9-d574b56393c9"/><h3 id="5b061f6c-6164-49d8-ae81-79c56b1a4920" class="">TP reports:</h3><p id="51bd1092-496b-4beb-b4c8-f85c0d9f22b1" class="">The average of the reports for all four TPs count as <strong>half of your final grade</strong>, so be sure to do them properly and nicely.</p><p id="1ad6f121-ad9c-4ba5-a54a-158251e5e1f2" class="">In normal times, these reports were uploaded to TEIDE. However, due to current issues on Grenoble-INP servers, we will ask you to send us the TPs by e-mail.</p><ul id="69cda7dd-1c9f-43b2-a4eb-93aa1c3ece95" class="bulleted-list"><li style="list-style-type:disc">One e-mail per team is enough</li></ul><ul id="a801b4ce-8fcb-4670-b8e5-569dd3e3ff2e" class="bulleted-list"><li style="list-style-type:disc">Please send your e-mail with a tag <code>[SADM TP report — Team #N]</code> on the subject line, where N is the number of your team</li></ul><ul id="0c700af5-19a9-40ac-b5c5-80c7b3d060ff" class="bulleted-list"><li style="list-style-type:disc">Please be sure to send the <code>rmd</code> file of your report with the <strong>full name</strong> of all students in your team</li></ul><hr id="2332909e-a1b8-4368-9fc6-a1acda794d5a"/><h3 id="ad60bdd9-341f-4943-abb2-7ded93033ba2" class="">Complementary classes for MSIAM students:</h3><p id="161d4f66-ae27-45a5-8220-7a38c46a1709" class="">The complementary classes will be given on Tuesdays from 11h30 to 13h.</p><p id="629d55a0-a510-4629-ba49-0008c3a59cc2" class="">The materials used by Professor Tin will be made available in this page. All students are invited to take a look and profit from it.</p><hr id="65d91db0-dcf2-4336-a4c0-43efee4ddadf"/><h3 id="75166501-7752-40f7-831a-4f8bdc8e7f39" class="">Office hours:</h3><p id="e2230487-95e9-4f65-8f78-234a5c12458f" class="">There will be two 1h <strong>in-person</strong> office hours offered at the beginning of the semester:</p><ul id="a4cb2d72-6759-422b-9720-c98b07c2bc40" class="bulleted-list"><li style="list-style-type:disc">06-February from 13h to 14h with a brief introduction to R programming</li></ul><ul id="ca23df7e-1e8c-4fcd-ae2b-6e6d93fd4119" class="bulleted-list"><li style="list-style-type:disc">20-February from 13h to 14h with a short presentation to what we expect from TP reports</li></ul><p id="3d21fc0b-1dfd-438b-8a29-1c745cacd1ab" class="">Professor Pedro will also make himself available<strong> upon request</strong> every Thursday from 15h to 17h for <strong>remote</strong> office hours via Zoom. During these sessions he will answer any questions about the CM, TD, or TP that you might have. Please write to pedro.rodrigues@inria.fr beforehand if you’re planning to attend.</p><hr id="8b75d391-2830-4be2-a7b0-0fbe97e281b5"/><h3 id="f8786e64-da8b-40a0-886e-910950fb57fb" class="">More useful resources:</h3><p id="9ece0ca8-4cf0-4ec0-88a1-7f75b6128583" class="">[TODO]</p><p id="bf36d9cf-1088-454a-a6b7-91ec707476ed" class="">
+</p></div></article></body></html>

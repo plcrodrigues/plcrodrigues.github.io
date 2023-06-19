@@ -9,7 +9,20 @@ author_profile: true
 
 <h1 style="margin-bottom:0.5em"><img src="/images/picto_teaching.svg" width="80px" style="margin-right:15px">Teaching</h1>
 
-During my academic years I have had the opportunity and the <span style="font-weight:bold">pleasure of teaching</span> classes on several different places under the supervision of great teachers and colleagues. Although the descriptions here below are all in english, I have also given classes in portuguese and french. 
+I have had the opportunity and the <span style="font-weight:bold">pleasure of teaching</span> classes on several different places under the supervision of great teachers and colleagues. Although the descriptions here below are all in english, I have also given classes in portuguese and french. 
+
+<div class="container" style="padding-bottom:2em">
+  <div class="row">
+    <div class="col-3">
+      <img src="/images/logo_ensimag.svg" height="80px"/>
+    </div>
+    <div class="col-9">
+    <b>ENSIMAG.</b> Main professor (CM, TP, and TD) for the course on <span style="font-style: italic;">Statistical analysis and document mining</span> to students of the 2nd year of the engineering program and M1AM from UGA. I was a TA for this class in 2018 and 2019. See more info <a href="./sadm.html" style="color:#00b050; font-weight:bold;">here</a>.
+      <br>
+      <span style="font-size:0.9rem">Professor responsible for the course: Jean-Baptiste Durand.</span>      
+    </div>
+  </div>
+</div>
 
 <div class="container" style="padding-bottom:2em">
   <div class="row">
@@ -33,19 +46,6 @@ During my academic years I have had the opportunity and the <span style="font-we
       <b>PHELMA.</b> Teaching assistant for the course on <span style="font-style: italic;">Numerical optimization</span> to students of the 2nd year of the engineering program, 20 hours in total from 2017 until 2019. 
       <br>
       <span style="font-size:0.9rem">Professor responsible for the course: Bertrand Rivet.</span>
-    </div>
-  </div>
-</div>
-
-<div class="container" style="padding-bottom:2em">
-  <div class="row">
-    <div class="col-3">
-      <img src="/images/logo_ensimag.svg" height="80px"/>
-    </div>
-    <div class="col-9">
-    <b>ENSIMAG.</b> Teaching assistant for the course on <span style="font-style: italic;">Data mining and statistical data analysis</span> to students of the 2nd year of the engineering program, 32 hours in total from 2017 until 2019. 
-      <br>
-      <span style="font-size:0.9rem">Professor responsible for the course: Jean-Baptiste Durand.</span>      
     </div>
   </div>
 </div>

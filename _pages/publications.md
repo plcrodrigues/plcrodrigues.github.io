@@ -21,11 +21,28 @@ author_profile: true
 You can also check my profile at <a href="https://scholar.google.com/citations?user=8Jiux08AAAAJ" target="_blank" style="font-weight:bold; color:#00b050">Google scholar</a> for a (probably) more updated list.
 
 <h2><a id="sbi">Works on simulation-based inference</a></h2>
-These publications are related to the research topic that I’ve been developping during my post-doc. Several collaborations are currently under progress with researchers from the University of Liège, Brown University, and the ICTP in Italy.
+These publications are related to the research topic that I started developping during my post-doc and is currently my main topic of interest. Several collaborations are currently under progress with researchers from the University of Liège, Brown University, and the ICTP in Italy.
 <ol class="split start" style="margin-top:1em">
-  <li> <u>PLC Rodrigues</u>, Thomas Moreau, Gilles Louppe, A Gramfort. “<i>Leveraging global parameters for flow-based neural posterior estimation</i>”.  Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2102.06477" target="_blank">arXiv:2102.06477</a>.</li>
-  <li> <u>PLC Rodrigues</u> and A Gramfort. “<i>Learning summary features of time series likelihood free inference</i>”. Workshop on Machine Learning and the Physical Sciences at the 34th conference on NeurIPS. Online conference. December, 2020. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2012.02807" target="_blank">arXiv:2012.02807</a>.</li>
-  <li>M Jallais, <u>PLC Rodrigues</u>, A Gramfort, D Wassermann. “<i>Cytoarchitecture measurements in brain gray matter using likelihood-free Inference</i>”. Accepted at IPMI2021. December, 2020. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.inria.fr/hal-03090959" target="_blank">hal-03090959</a>.</li>
+  
+  <li> J Linhart, A Gramfort, <u>PLC Rodrigues</u>. “<i>L-C2ST: Local Diagnostics for Posterior Approximations in Simulation-Based Inference
+</i>”.  Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2306.03580" target="_blank">arXiv:2306.03580</a>.
+  </li>
+
+  <li> J Linhart, A Gramfort, <u>PLC Rodrigues</u>. “<i>L-C2ST: Local Validation Diagnostics for SBI algorithms based on Normalizing Flows
+</i>”.  Accepted at at the Workshop on Machine Learning and the Physical Sciences at NeurIPS 2022. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2306.03580" target="_blank">arXiv:2306.03580</a>.
+  </li>  
+
+  <li> <u>PLC Rodrigues</u>, Thomas Moreau, Gilles Louppe, A Gramfort. “<i>HNPE: Leveraging Global Parameters for Neural Posterior Estimation
+</i>”.  Accepted at NeurIPS 2021. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2102.06477" target="_blank">arXiv:2102.06477</a>.
+  </li>
+  
+  <li> <u>PLC Rodrigues</u> and A Gramfort. “<i>Learning summary features of time series likelihood free inference</i>”. Accepted at the Workshop on Machine Learning and the Physical Sciences at NeurIPS 2020. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2012.02807" target="_blank">arXiv:2012.02807
+  </a>.
+  </li>
+  
+  <li>M Jallais, <u>PLC Rodrigues</u>, A Gramfort, D Wassermann. “<i>Cytoarchitecture measurements in brain gray matter using likelihood-free Inference</i>”. Accepted at IPMI 2021. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.inria.fr/hal-03090959" target="_blank">hal-03090959</a>.
+  </li>
+
 </ol>
 
 <div id="transfer_learning">

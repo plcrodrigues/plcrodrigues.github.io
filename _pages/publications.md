@@ -28,8 +28,10 @@ These publications are related to the research topic that I started developping 
 </i>”.  Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2306.03580" target="_blank">arXiv:2306.03580</a>.
   </li>
 
-  <li> J Linhart, A Gramfort, <u>PLC Rodrigues</u>. “<i>L-C2ST: Local Validation Diagnostics for SBI algorithms based on Normalizing Flows
-</i>”.  Accepted at at the Workshop on Machine Learning and the Physical Sciences at NeurIPS 2022. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2306.03580" target="_blank">arXiv:2306.03580</a>.
+  <li> N Tolley, <u>PLC Rodrigues</u>, A Gramfort, S Jones. “<i>Methods and considerations for estimating parameters in biophysically detailed neural models with simulation based inference</i>”.  Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.biorxiv.org/content/10.1101/2023.04.17.537118v1" target="_blank">bioRxiv:2023.04.17.537118v1</a>.
+  </li>  
+
+  <li> J Linhart, A Gramfort, <u>PLC Rodrigues</u>. “<i>Validation Diagnostics for SBI algorithms based on Normalizing Flows</i>”.  Accepted at at the Workshop on Machine Learning and the Physical Sciences at NeurIPS 2022. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2211.09602" target="_blank">arXiv:2211.09602</a>.
   </li>  
 
   <li> <u>PLC Rodrigues</u>, Thomas Moreau, Gilles Louppe, A Gramfort. “<i>HNPE: Leveraging Global Parameters for Neural Posterior Estimation

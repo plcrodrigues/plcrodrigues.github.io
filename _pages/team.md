@@ -11,15 +11,15 @@ author_profile: true
 
 I'm very lucky to work closely with talented students and collaborators. 
 
-Some of their names are: 
+Some of their names are:
 
 ## Ph.D. students
-- Julia Linhart (co-supervised with Alex Gramfort) -- From 2021 to 2024
+- Julia Linhart (co-supervised with <a href="https://alexandre.gramfort.net/" style="color:#00b050; font-weight:bold;">Alexandre Gramfort</a>) -- From 2021 to 2024
 
 ## Post-docs
-- Jhouben Cuesta Ramirez (co-supervised with Florence Forbes) - From 2022 to 2024
+- Jhouben Ramirez (co-supervised with <a href="http://mistis.inrialpes.fr/people/forbes/" style="color:#00b050; font-weight:bold;">Florence Forbes</a>) -- From 2022 to 2024
 
 ## Interns
-- Maelig Hurte (UGA) - 2023
-- Matthieu Mouzaoui (IMT Lille) - 2023
-- Arthur Lebeurrier (ENSIMAG) - 2022
+- Maelig Hurte (UGA) -- 2023
+- Matthieu Mouzaoui (IMT Lille) -- 2023
+- Arthur Lebeurrier (ENSIMAG) -- 2022

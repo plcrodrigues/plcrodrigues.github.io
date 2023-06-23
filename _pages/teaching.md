@@ -19,7 +19,7 @@ I have had the opportunity and the <span style="font-weight:bold">pleasure of te
     <div class="col-9">
     <b>ENSIMAG.</b> Main professor (CM, TP, and TD) for the course on <span style="font-style: italic;">Statistical analysis and document mining</span> to students of the 2nd year of the engineering program and M1AM from UGA. I was a TA for this class in 2018 and 2019. See more info <a href="./sadm.html" style="color:#00b050; font-weight:bold;">here</a>.
       <br>
-      <span style="font-size:0.9rem">Professor responsible for the course: Jean-Baptiste Durand.</span>      
+      <span style="font-size:0.9rem">Professor responsible for the course: Olivier Gaudoin.</span>      
     </div>
   </div>
 </div>

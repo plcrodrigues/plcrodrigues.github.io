@@ -9,7 +9,9 @@ author_profile: true
 
 <h1 style="margin-bottom:0.5em"><img src="/images/picto_team.svg" width="80px" style="margin-right:15px">Team</h1>
 
-I'm very lucky to work closely with talented students and collaborators. 
+As a Inria researcher, I am part of the <a href="https://team.inria.fr/statify/" style="color:#00b050; font-weight:bold;">Statify</a> team.
+
+I'm also very lucky to work (and have worked) closely with very talented students. 
 
 Some of their names are:
 

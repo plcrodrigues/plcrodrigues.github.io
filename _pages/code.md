@@ -20,8 +20,8 @@ Here below I list some of the codes and projects that I have worked on.
     <div class="col-9">
       <span style="font-weight:bold;">Transfer Learning for BCI.</span> During my
       Ph.D. years, I worked a lot on problems related to transfer learning for 
-      brain-computer interfaces. You can check the <a style="color:#00b050; font-weight:bold;" href="http://plcrodrigues.github.io/research/">research</a> page for an overview of this topic. The code related to RPA is available <a style="color:#00b050; font-weight:bold;" href="https://github.com/plcrodrigues/RPA" target="_blank">here</a> and the
-      code related to the Dimensionality Transcending is <a style="color:#00b050; font-weight:bold;" href="https://github.com/plcrodrigues/DT" target="_blank">here</a>. Please feel free to open issues on both repositories; contributions are always welcome.      
+      brain-computer interfaces. You can check the <a style="color:#00b050; font-weight:bold;" href="http://plcrodrigues.github.io/research/">research</a> page for an overview of this topic. The code related to RPA is available <a style="color:#00b050; font-weight:bold;" href="https://github.com/plcrodrigues/RPA" target="_blank">here</a> and is now part of `pyriemann` too. You can check <a style="color:#00b050; font-weight:bold;" href="https://pyriemann.readthedocs.io/en/latest/auto_examples/index.html#transfer-learning" target="_blank">these</a> examples for more information. The
+      code related to the Dimensionality Transcending is <a style="color:#00b050; font-weight:bold;" href="https://github.com/plcrodrigues/DT" target="_blank">here</a>. Please feel free to open issues on both repositories; contributions are always welcome.
     </div>
   </div>
 </div>
@@ -34,7 +34,7 @@ Here below I list some of the codes and projects that I have worked on.
     <div class="col-9">
       <span style="font-weight:bold;">pyRiemann.</span> In this package developed by
       <a style="color:#00b050; font-weight:bold;" href="https://alexandre.barachant.org/" target="_blank">Alexandre Barachant</a> you can find implementations of most of the basic geometric operations in the symmetric-positive
-      definite manifold. A very nice feature of <a style="color:#00b050; font-weight:bold;" href="https://pyriemann.readthedocs.io/en/latest/" target="_blank">pyRiemann</a> is its compatibility with the <a style="color:#00b050; font-weight:bold;" href="https://scikit-learn.org/stable/" target="_blank">scikit-learn</a> API. I did some contributions to the code base of this package, mainly on its non-linear dimensionality reduction features.
+      definite manifold. A very nice feature of <a style="color:#00b050; font-weight:bold;" href="https://pyriemann.readthedocs.io/en/latest/" target="_blank">pyRiemann</a> is its compatibility with the <a style="color:#00b050; font-weight:bold;" href="https://scikit-learn.org/stable/" target="_blank">scikit-learn</a> API. I did some contributions to the code base of this package, mainly on its non-linear dimensionality reduction and transfer learning modules. I have also given a presentation at the BCI Meeting 2023 talking about the package. See <a style="color:#00b050; font-weight:bold;" href="https://github.com/mccorsi/BCI-2023-Open-Source-Tool-workshop/tree/main/Pyriemann" target="_blank">here</a> for more information.
     </div>
   </div>
 </div>

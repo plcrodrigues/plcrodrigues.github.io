@@ -4,11 +4,11 @@ main:
   - title: "About me"
     url: /about/
 
-  - title: "research"
-    url: /research/
-
   - title: "team"
-    url: /team/     
+    url: /team/
+
+  - title: "research"
+    url: /research/    
 
   - title: "publications"
     url: /publications/   
@@ -19,8 +19,8 @@ main:
   - title: "teaching"
     url: /teaching/    
         
-  # - title: "Blog Posts"
-  #   url: /year-archive/
+  - title: "blog"
+    url: /blog/
     
   - title: "CV"
     url: /cv/

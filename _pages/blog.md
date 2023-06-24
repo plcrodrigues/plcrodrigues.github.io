@@ -12,9 +12,11 @@ use_math: true
 
 I like to write about stuff that I've learned. This helps me consolidate things
 in my head and, if I'm lucky, help other people interested in the same topics
-as me. Please, don't hesitate to write me at <span style="font-weight:bold">
-pedro.rodrigues at inria dot fr</span>if you see any mistakes on my writing, 
+as me. 
+
+Please, don't hesitate to write me at <span style="font-weight:bold">
+pedro.rodrigues at inria dot fr</span> if you see any mistakes on my writing, 
 if you have any suggestions of improvements, or if you just want to comment on
 something I've written.
 
-- How does the rejection sampling algorithm work? [[post](_posts/rejection-sampling)] (24 June 2023) 
+- How does the rejection sampling algorithm work? <a href="/posts/rejection-sampling" style="color:#00b050; font-weight:bold;">[post]</a> (24 June 2023) 

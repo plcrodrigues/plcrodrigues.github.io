@@ -10,13 +10,11 @@ use_math: true
 
 <h1 style="margin-bottom:0.5em"><img src="/images/picto_blog.svg" width="80px" style="margin-right:15px">Blog</h1>
 
-# The Riemannian Gaussian distribution
-With Salem Saïd I've been working a lot on how to sample from the Riemannian Gaussian
-distribution, a generalized version of our favorite probability distribution to the
-space of symmetric positive definite matrices.
+I like to write about stuff that I've learned. This helps me consolidate things
+in my head and, if I'm lucky, help other people interested in the same topics
+as me. Please, don't hesitate to write me at <span style="font-weight:bold">
+pedro.rodrigues at inria dot fr</span>if you see any mistakes on my writing, 
+if you have any suggestions of improvements, or if you just want to comment on
+something I've written.
 
-More precisely, the pdf looks like this: for $\boldsymbol{X} \in \mathcal{P}(d)$ we have
-
-$$
-p(\boldsymbol{X}) = \dfrac{1}{\zeta(\sigma)}\exp\left(-\dfrac{1}{2\sigma^2}\delta_R^2(\boldsymbol{X}, \boldsymbol{I})\right)
-$$
+- How does the rejection sampling algorithm work? [[post](_posts/rejection-sampling)] (24 June 2023) 

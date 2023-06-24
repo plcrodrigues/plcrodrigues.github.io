@@ -12,6 +12,9 @@ distribution, a generalized version of our favorite probability distribution to 
 space of symmetric positive definite matrices.
 
 More precisely, the pdf looks like this: for $\boldsymbol{X} \in \mathcal{P}(d)$ we have
+
 $$
+\begin{center}
 p(\boldsymbol{X}) = \dfrac{1}{\zeta(\sigma)}\exp\left(-\dfrac{1}{2\sigma^2}\delta_R^2(\boldsymbol{X}, \boldsymbol{I})\right)
+\end{center}
 $$

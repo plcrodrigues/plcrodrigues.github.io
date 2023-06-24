@@ -6,7 +6,11 @@ author_profile: true
 use_math: true
 ---
 
-## The Riemannian Gaussian distribution
+{% include base_path %}
+
+<h1 style="margin-bottom:0.5em"><img src="/images/picto_blog.svg" width="80px" style="margin-right:15px">Blog</h1>
+
+# The Riemannian Gaussian distribution
 With Salem Saïd I've been working a lot on how to sample from the Riemannian Gaussian
 distribution, a generalized version of our favorite probability distribution to the
 space of symmetric positive definite matrices.

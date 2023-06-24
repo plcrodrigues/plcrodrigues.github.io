@@ -19,4 +19,4 @@ pedro.rodrigues at inria dot fr</span> if you see any mistakes on my writing,
 if you have any suggestions of improvements, or if you just want to comment on
 something I've written.
 
-- How does the rejection sampling algorithm work? <a href="/posts/rejection-sampling" style="color:#00b050; font-weight:bold;">[post]</a> (24 June 2023) 
+- How does the rejection sampling algorithm work? <a href="/posts/rejection-sampling/" style="color:#00b050; font-weight:bold;">[post]</a> (24 June 2023) 

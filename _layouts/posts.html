@@ -1,0 +1,30 @@
+---
+layout: compress
+---
+
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+    {% if page.use_math %}
+    {% include mathjax_support.html %}
+    {% endif %}    
+  </head>
+
+  <body>
+    {% include masthead.html %}
+    <div id="main" role="main" style="width: 75%; margin-top:1.00em;">
+    {{ content }}
+    </div>
+    <div class="page__footer" style="border-top: 3px solid #00b050">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
+    </div>
+    {% include scripts.html %}
+  </body>
+</html>

@@ -8,9 +8,9 @@ use_math: true
 
 {% include base_path %}
 
-<h1 style="margin-bottom:0.5em"><img src="/images/picto_blog.svg" width="80px" style="margin-right:15px">Blog</h1>
+<h1 style="margin-bottom:0.5em"><img src="/images/picto_blog.svg" width="70px" style="margin-right:15px">Blog</h1>
 
-I like to write about stuff that I've learned. This helps me consolidate things
+I like to write about things that I've learned. This helps me consolidate things
 in my head and, if I'm lucky, help other people interested in the same topics
 as me. 
 

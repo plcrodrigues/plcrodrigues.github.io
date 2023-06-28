@@ -136,7 +136,7 @@ $g$ for which $M$ is large will result in an algorithm with many rejections.
 
 ## An example
 In a recent project involving the sampling of symmetric positive definite
-matrices from a <a href="https://en.wikipedia.org/wiki/Rejection_sampling" style="color:#00b050; font-weight:bold;">Riemannian Gaussian</a> distribution,
+matrices from a <a href="https://arxiv.org/abs/1507.01760" style="color:#00b050; font-weight:bold;">Riemannian Gaussian</a> distribution,
 I've stumbled upon the following two-dimensional pdf
 
 $$
@@ -155,7 +155,7 @@ The 2D plot for this pdf is given below.
 It is not too <a href="https://github.com/pyRiemann/pyRiemann/pull/198" style="color:#00b050; font-weight:bold;">hard to show</a> that the target pdf can be upper bounded as per
 
 $$
-f(r_1, r_2) \leq \dfrac{2\pi \sigma^2 \exp(\sigma^2/4)}{\zeta_2(\sigma)} g(r_1, r_2)
+f(r_1, r_2) \leq \dfrac{\pi \sigma^2 \exp(\sigma^2/4)}{\zeta_2(\sigma)} g(r_1, r_2)
 $$
 
 where $g(r_1, r_2) = \mathcal{N}(\mu, \Sigma)$ with $\mu = \left[\tfrac{1}{2}\sigma^2, -\tfrac{1}{2}\sigma^2\right]^\top$ and $\Sigma = \sigma^2\mathbf{I}_2$.
@@ -163,7 +163,7 @@ where $g(r_1, r_2) = \mathcal{N}(\mu, \Sigma)$ with $\mu = \left[\tfrac{1}{2}\si
 The testing criterium appplied to $(R_1, R_2) \sim g$ and $U \sim \mathcal{U}[0, 1]$ can then be written as
 
 $$
-U \leq {\exp(-\sigma^2/4)}  \times \dfrac{\zeta_2(\sigma)f(R_1, R_2)}{2\pi \sigma^2g(R_1, R_2)}~,
+U \leq {\exp(-\sigma^2/4)}  \times \dfrac{\zeta_2(\sigma)f(R_1, R_2)}{\pi \sigma^2g(R_1, R_2)}~,
 $$
 
 where we see that the $\zeta_2(\sigma)$ in the numerator of the second term will cancel out with the one inside
@@ -200,7 +200,7 @@ while len(R_samples) < N_samples:
     U = np.random.rand(N_cand)
     # set up the test criterium
     num = np.exp(-sigma**2/4) * pdf_f_unnormalized(R_cand, sigma)
-    den = 2*np.pi*sigma**2 * multivariate_normal.pdf(R_cand, mu, cov)
+    den = np.pi*sigma**2 * multivariate_normal.pdf(R_cand, mu, cov)
     # get the idx of the candidate samples that pass the test
     sel = U < num/den
     R_accept = R_cand[sel]
@@ -220,7 +220,7 @@ samples obtained via rejection sampling. We see that the samples tend to
 concentrate where the pdf is larger and they respect the strong constraint of
 always having $r_1 - r_2 \geq 0$. 
 
-<center><img src="/codes/rejection-sampling-fig02.svg"></center>
+<center><img src="/codes/rejection-sampling-fig02.svg" style="height:200%;"></center>
 
 We can also inspect the probability of acceptance of the rejection sampling
 procedure for different values of $\sigma$. The theoretical values in the plot

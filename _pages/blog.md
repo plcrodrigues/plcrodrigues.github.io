@@ -19,4 +19,6 @@ pedro.rodrigues at inria dot fr</span> if you see any mistakes on my writing,
 if you have any suggestions of improvements, or if you just want to comment on
 something I've written.
 
-- How does the rejection sampling algorithm work? <a href="/posts/rejection-sampling/" style="color:#00b050; font-weight:bold;">[post]</a> (24 June 2023) 
+- Plotting 2x2 SPD matrices <a href="/posts/plotting-spd-matrices/" style="color:#00b050; font-weight:bold;">[post]</a> (30 June 2023) 
+- Making a toy model for time series <a href="/posts/time-series-toy-models/" style="color:#00b050; font-weight:bold;">[post]</a> (27 June 2023) 
+- How does the rejection sampling algorithm work? <a href="/posts/rejection-sampling/" style="color:#00b050; font-weight:bold;">[post]</a> (24 June 2023)

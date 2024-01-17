@@ -14,10 +14,10 @@ I have had the opportunity and the <span style="font-weight:bold">pleasure of te
 <div class="container" style="padding-bottom:2em">
   <div class="row">
     <div class="col-3">
-      <img src="/images/logo_ipp.svg" height="80px"/>
+      <img src="/images/logo_ipp.svg" height="70px"/>
     </div>
     <div class="col-9">
-    <b>ENSIMAG.</b> Since 2023 I've been giving the <span style="font-style: italic;">DataCamp</span> course of the M2 Data Science from the Institut Polytechnique Paris. This is a 30h intensive course offered in one week where students learn several practical aspects about data science. I'm very lucky to be part of a team having <a href="https://tommoral.github.io/about.html" style="color:#00b050; font-weight:bold;">Thomas Moreau</a> and <a href="https://alexandre.gramfort.net/" style="color:#00b050; font-weight:bold;">Alexandre Gramfort</a>. See more info <a href="https://github.com/x-datascience-datacamp/datacamp-master" style="color:#00b050; font-weight:bold;">here</a>.     
+    <b>IPP.</b> Since 2023 I've been giving the <span style="font-style: italic;">DataCamp</span> course of the M2 Data Science from the Institut Polytechnique Paris. This is a 30h intensive course offered in one week where students learn several practical aspects about data science. I'm very lucky to be part of a team having <a href="https://tommoral.github.io/about.html" style="color:#00b050; font-weight:bold;">Thomas Moreau</a> and <a href="https://alexandre.gramfort.net/" style="color:#00b050; font-weight:bold;">Alexandre Gramfort</a>. See more info <a href="https://github.com/x-datascience-datacamp/datacamp-master" style="color:#00b050; font-weight:bold;">here</a>.     
     </div>
   </div>
 </div>

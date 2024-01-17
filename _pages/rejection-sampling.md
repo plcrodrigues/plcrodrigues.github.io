@@ -13,8 +13,14 @@ tags:
 
 ## Introduction
 I've been recently interested in the inner workings of the well known <a href="https://en.wikipedia.org/wiki/Rejection_sampling" style="color:#00b050; font-weight:bold;">rejection sampling</a> procedure for obtaining samples from a probability distribution
-function (pdf). There are many excellent references for learning and
-understanding how this method works, my favorite being Christian Robert and George
+function (pdf). This is a nice sampling procedure that only returns samples that follow
+**exactly** the target pdf, as opposed to usual MCMC schemes for which one has to
+wait for the chains to converge before being sure that the samples really follow the distribution that we want to sample. The downside of rejection sampling is that it usually
+does not scale well when the data dimension increases, but we won't be bothering
+too much about this for now. 
+
+There are many excellent references for learning and
+understanding how rejection sampling works, my favorite being Christian Robert and George
 Casella's book "Monte Carlo Statistical Methods". In what follows, I tried to
 give a somewhat intuitive and pedagogical explanation of the basic version of
 the rejection sampling method. I've also included an example written in `python`.
@@ -37,59 +43,59 @@ $$
 ## Theory
 
 We will consider now a result that, at first, seems quite artificial, but it is
-in fact very useful for what we will be doing next: if we sample $Y \sim g$ and 
+in fact very useful for what we will be doing next: if we sample $X \sim g$ and 
 $U \sim \mathcal{U}[0, 1]$ independently, we can always write that
 
 $$
-\text{Prob}\left(U \leq \dfrac{f(Y)}{M g(Y)} \Bigg|~Y = y \right) = \dfrac{f(y)}{M~g(y)}~.
+\text{Prob}\left(U \leq \dfrac{f(X)}{M g(X)} \Bigg|~X = x \right) = \dfrac{f(x)}{M~g(x)}~.
 $$
 
 > This is not hard to see if you remember two basic things: (1) When 
-> conditioning on $Y = y$, we are saying that the right side of the inequality 
+> conditioning on $X = x$, we are saying that the right side of the inequality 
 > is a **constant**. (2) The probability of an uniform random variable $U$ being 
 > smaller than a fixed constant $u$ is **exactly** equal to $u$.
 
 Now, if we take the integral of the above conditional probability over all 
-possible values of $y$ we obtain an **unconditioned** probability statement as per
+possible values of $x$ we obtain an **unconditioned** probability statement as per
 
 $$
-\int \text{Prob}\left(U \leq \dfrac{f(Y)}{M g(Y)} \Bigg|~Y = y \right)~g(y)\mathrm{d}y = \int \dfrac{f(y)}{M}~\mathrm{d}y = \dfrac{1}{M}
+\int \text{Prob}\left(U \leq \dfrac{f(X)}{M g(X)} \Bigg|~X = x \right)~g(x)\mathrm{d}x = \int \dfrac{f(x)}{M}~\mathrm{d}x = \dfrac{1}{M}
 $$
 
 since $f$ is a pdf and thus sums up to one. We will rewrite this result as
 
 $$
-\boxed{\text{Prob}_G\left(U \leq \dfrac{f(Y)}{M g(Y)} \right) = \dfrac{1}{M}}
+\boxed{\text{Prob}_G\left(U \leq \dfrac{f(X)}{M g(X)} \right) = \dfrac{1}{M}}
 $$
 
 where the subscript in the $\text{Prob}_G$ operator indicates that the random 
-variable $Y$ is sampled from the distribution G with corresponding pdf $g$.
+variable $X$ is sampled from the distribution G with corresponding pdf $g$.
 
 Another important result is that, for any measurable set $\mathcal{B}$ in the 
-space where $Y$ is defined, Bayes' theorem gives us
+space where $X$ is defined, Bayes' theorem gives us
 
 $$
-\text{Prob}_G\left(Y \in \mathcal{B}~\Bigg|~U \leq \dfrac{f(Y)}{M~g(Y)}\right) = \dfrac{\text{Prob}_G\left(U \leq \dfrac{f(Y)}{M~g(Y)},~Y \in \mathcal{B}\right)}{\text{Prob}_G\left(U \leq \dfrac{f(Y)}{M~g(Y)}\right)}
+\text{Prob}_G\left(X \in \mathcal{B}~\Bigg|~U \leq \dfrac{f(X)}{M~g(X)}\right) = \dfrac{\text{Prob}_G\left(U \leq \dfrac{f(X)}{M~g(X)},~X \in \mathcal{B}\right)}{\text{Prob}_G\left(U \leq \dfrac{f(X)}{M~g(X)}\right)}
 $$
 
 The numerator for this expression can be rewritten as
 
 $$
 \begin{array}{rcl}
-\text{Prob}_G\left(U \leq \dfrac{f(Y)}{M~g(Y)},~Y \in \mathcal{B}\right) &=& \displaystyle\int_{\mathcal{B}} \text{Prob}_G\left(U \leq \dfrac{f(Y)}{M~g(Y)} ~\Bigg|~Y = w\right)~g(w)\mathrm{d}w \\[1em]
+\text{Prob}_G\left(U \leq \dfrac{f(X)}{M~g(X)},~X \in \mathcal{B}\right) &=& \displaystyle\int_{\mathcal{B}} \text{Prob}_G\left(U \leq \dfrac{f(X)}{M~g(X)} ~\Bigg|~X = w\right)~g(w)\mathrm{d}w \\[1em]
 &=& \displaystyle\int_\mathcal{B} \dfrac{f(w)}{Mg(w)}~g(w)\mathrm{d}w \\[1em]
-&=& \dfrac{1}{M} \times \text{Prob}_F\Big(Y \in \mathcal{B}\Big)
+&=& \dfrac{1}{M} \times \text{Prob}_F\Big(X \in \mathcal{B}\Big)
 \end{array}
 $$
 
 and dividing by the denominator we end up with
 
 $$
-\boxed{\text{Prob}_G\left(U \leq \dfrac{f(Y)}{M~g(Y)},~Y \in \mathcal{B}\right) = \text{Prob}_F\Big(Y \in \mathcal{B}\Big)}
+\boxed{\text{Prob}_G\left(U \leq \dfrac{f(X)}{M~g(X)},~X \in \mathcal{B}\right) = \text{Prob}_F\Big(X \in \mathcal{B}\Big)}
 $$
 
 This is a very nice result because we have a probability statement written for
-a random variable $Y$ sampled from $G$ (i.e. the distribution which is easy to 
+a random variable $X$ sampled from $G$ (i.e. the distribution which is easy to 
 sample from) equated to another statement for a random variable sampled from $F$. 
 These two statements are linked through the same set $\mathcal{B}$.
 
@@ -97,14 +103,14 @@ These two statements are linked through the same set $\mathcal{B}$.
 Using the above results, we can derive the following **algorithm** to obtain 
 samples from a target distribution $F$ with pdf $f$:
 
-1. Generate a random variable $Y \sim g$
+1. Generate a random variable $X \sim g$
 
 2. Generate a random variable $U \sim \mathcal{U}[0, 1]$ independently from $Y$
 
 3. If we have that
    
    $$
-   U \leq \dfrac{f(Y)}{M~g(Y)}
+   U \leq \dfrac{f(X)}{M~g(X)}
    $$
 
    then accept the sample; otherwise, reject it and go back to **Step 1**.
@@ -113,7 +119,7 @@ The samples that will get accepted in this algorithm are those for which
 the inequality holds. Their distribution function is
 
 $$
-\forall \mathcal{B} \quad \text{Prob}_G\left(Y \in \mathcal{B}~\Bigg|~U \leq \dfrac{f(Y)}{M~g(Y)}\right) = \text{Prob}_F\left(Y \in \mathcal{B}\right)
+\forall \mathcal{B} \quad \text{Prob}_G\left(X \in \mathcal{B}~\Bigg|~U \leq \dfrac{f(X)}{M~g(X)}\right) = \text{Prob}_F\left(X \in \mathcal{B}\right)
 $$
 
 meaning that they follow the distribution $F$ that we wanted from the start.
@@ -127,7 +133,7 @@ Since the accepted samples are those for which the inequality in Eq (8) is true,
 we can state that
 
 $$
-\text{Prob}(Y \text{ is accepted}) = \text{Prob}_G\left(U \leq \dfrac{f(Y)}{M~g(Y)}\right) = \dfrac{1}{M}~,
+\text{Prob}(X \text{ is accepted}) = \text{Prob}_G\left(U \leq \dfrac{f(X)}{M~g(X)}\right) = \dfrac{1}{M}~,
 $$
 
 which gives us the intuitive result that the probability of acceptance decreases
@@ -220,7 +226,7 @@ samples obtained via rejection sampling. We see that the samples tend to
 concentrate where the pdf is larger and they respect the strong constraint of
 always having $r_1 - r_2 \geq 0$. 
 
-<center><img src="/codes/rejection-sampling-fig02.svg" style="height:200%;"></center>
+<center><img src="/codes/rejection-sampling-fig02.svg"></center>
 
 We can also inspect the probability of acceptance of the rejection sampling
 procedure for different values of $\sigma$. The theoretical values in the plot

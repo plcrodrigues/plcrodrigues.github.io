@@ -25,7 +25,7 @@ These publications are related to the research topic that I started developping 
 <ol class="split start" style="margin-top:1em">
   
   <li> J Linhart, A Gramfort, <u>PLC Rodrigues</u>. “<i>L-C2ST: Local Diagnostics for Posterior Approximations in Simulation-Based Inference
-</i>”.  Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2306.03580" target="_blank">arXiv:2306.03580</a>.
+</i>”.  Accepted at NeurIPS 2023. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2306.03580" target="_blank">arXiv:2306.03580</a>.
   </li>
 
   <li> N Tolley, <u>PLC Rodrigues</u>, A Gramfort, S Jones. “<i>Methods and considerations for estimating parameters in biophysically detailed neural models with simulation based inference</i>”.  Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.biorxiv.org/content/10.1101/2023.04.17.537118v1" target="_blank">bioRxiv:2023.04.17.537118v1</a>.
@@ -52,7 +52,8 @@ These publications are related to the research topic that I started developping 
 Both journal papers lay the mathematical foundations of my contributions in transfer learning for data defined in a SPD manifold. The other conference papers were all oral presentations, showing the growing interest of the research community in these methods.
 </div>
 <ol class="split" style="margin-top:1em">
-  <li>L Bougrain, S Rimbert, <u>PLC Rodrigues</u>, G Canron, F Lotte. “<i>Guidelines to use transfer learning for motor imagery detection: an experimental study</i>”. Submitted to the IEEE NER2021 conference. December, 2020.</li>
+  <li>A Mellot, A Collas, <u>PLC Rodrigues</u>, D Engemann, A Gramfort. “<i>Harmonizing and aligning M/EEG datasets with covariance-based techniques to enhance predictive regression modeling</i>”. Neuroscience Imaging, 2023, pp.1-26. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.science/hal-04328670" target="_blank">hal-04328670</a></li>
+  <li>L Bougrain, S Rimbert, <u>PLC Rodrigues</u>, G Canron, F Lotte. “<i>Guidelines to use transfer learning for motor imagery detection: an experimental study</i>”. Accepted at the IEEE NER2021 conference. December, 2020.</li>
   <li><u>PLC Rodrigues</u>, M Congedo, C Jutten, “<i>Dimensionality transcending: a method for merging BCI datasets with different dimensionalities</i>” IEEE Transactions on Biomedical Engineering, July, 2020, in press. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.inria.fr/hal-02905045" target="_blank">hal-02905045</a>. Related code available <a style="color:#00b050; font-weight:bold;" href="https://github.com/plcrodrigues/DT" target="_blank">here</a>.
   </li>
   <li><u>PLC Rodrigues</u>, M Congedo, C Jutten. “<i>‘When does it work?’: An exploratory analysis of transfer learning for BCI</i>”. 8th Graz Brain-Computer Interface Conference 2019, September, 2019, Graz, Austria. Oral presentation. Best student paper award. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.inria.fr/hal-02321580" target="_blank">hal-02321580</a>.

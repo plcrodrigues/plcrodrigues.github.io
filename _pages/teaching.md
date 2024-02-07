@@ -17,7 +17,7 @@ I have had the opportunity and the <span style="font-weight:bold">pleasure of te
       <img src="/images/logo_ipp.svg" height="70px"/>
     </div>
     <div class="col-9">
-    <b>IPP.</b> Since 2023 I've been giving the <span style="font-style: italic;">DataCamp</span> course of the M2 Data Science from the Institut Polytechnique Paris. This is a 30h intensive course offered in one week where students learn several practical aspects about data science. I'm very lucky to be part of a team having <a href="https://tommoral.github.io/about.html" style="color:#00b050; font-weight:bold;">Thomas Moreau</a> and <a href="https://alexandre.gramfort.net/" style="color:#00b050; font-weight:bold;">Alexandre Gramfort</a>. See more info <a href="https://github.com/x-datascience-datacamp/datacamp-master" style="color:#00b050; font-weight:bold;">here</a>.     
+    <b>IPP.</b> Since 2023 I've been giving the <span style="font-style: italic;">DataCamp</span> course of the M2 Data Science from the Institut Polytechnique Paris. This is a 30h intensive course offered in one week where students learn several practical aspects about data science. I'm very lucky to be part of a team having Thomas Moreau and Alexandre Gramfort as well. See more info <a href="https://github.com/x-datascience-datacamp/datacamp-master" style="color:#00b050; font-weight:bold;">here</a>.     
     </div>
   </div>
 </div>
@@ -28,7 +28,7 @@ I have had the opportunity and the <span style="font-weight:bold">pleasure of te
       <img src="/images/logo_ensimag.svg" height="80px"/>
     </div>
     <div class="col-9">
-    <b>ENSIMAG.</b> Since 2022 I am the main professor (CM, TP, and TD) for the course on <span style="font-style: italic;">Introduction to Statistica Learning and Applications</span> to students of the 2nd year of the engineering program and M1AM from UGA. I was a TA for this class in 2018 and 2019. See more info <a href="https://github.com/ISLA-Grenoble" style="color:#00b050; font-weight:bold;">here</a>.     
+    <b>ENSIMAG.</b> Since 2022 I am the main professor (CM, TP, and TD) for the course on <span style="font-style: italic;">Introduction to Statistical Learning and Applications</span> to students of the 2nd year of the engineering program and M1AM from UGA. I was a TA for this class in 2018 and 2019. See more info <a href="https://github.com/ISLA-Grenoble" style="color:#00b050; font-weight:bold;">here</a>.     
     </div>
   </div>
 </div>

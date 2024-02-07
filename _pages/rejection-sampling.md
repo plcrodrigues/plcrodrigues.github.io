@@ -91,7 +91,7 @@ $$
 and dividing by the denominator we end up with
 
 $$
-\boxed{\text{Prob}_G\left(U \leq \dfrac{f(X)}{M~g(X)},~X \in \mathcal{B}\right) = \text{Prob}_F\Big(X \in \mathcal{B}\Big)}
+\boxed{\text{Prob}_G\left(X \in \mathcal{B}~\Bigg|~U \leq \dfrac{f(X)}{M~g(X)}\right) = \text{Prob}_F\Big(X \in \mathcal{B}\Big)}
 $$
 
 This is a very nice result because we have a probability statement written for

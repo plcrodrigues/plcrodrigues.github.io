@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Diffusion Maps for EEG signal analysis</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./styles/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./styles/dashboard.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./scripts/vis/dist/vis.js"></script>
+    <script type="text/javascript" src="./scripts/d3/d3.js"></script>
+    <script type="text/javascript" src="./scripts/plcr/makegraph.js"></script>   
+    <script type="text/javascript" src="./scripts/plcr/menubar.js"></script>                  
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+    </script>
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>      
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./index.html">Diffusion Maps for EEG signal analysis</a>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container-fluid">
+	    <div class="row">
+			<div class="col-sm-3 col-md-2 sidebar" id="menubar">
+			</div>
+	    </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Frequently asked questions</h1> 					
+      <p class="description">
+	      My goal with this FAQ is to gather detailed answers to some common questions that people often make when first presented to the ideas of diffusion maps. If you have any other question which is not listed here below, feel free to send me an e-mail at <b>pedro-luiz.coelho-rodrigues at gipsa-lab dot fr</b>. I'll be happy to talk about it! (<i>there's not such thing as a stupid question</i>)
+      </p>             
+      <ul id="faqquestions">
+      	<li><b>How to select the parameter $\epsilon$ in the Gaussian kernel?</b>
+	      	<p class="description">
+	      	...
+	      	</p>
+      	</li>  
+      	<li><b>Why the eigenvectors of matrix $\mathbf{P}$</b>
+	      	<p class="description">
+	      	...
+	      	</p>
+      	</li>        	 
+      	<li><b>How do I extend the embedding on a dataset to new points?</b>
+	      	<p class="description">
+	      	...
+	      	</p>
+      	</li> 
+      	<li><b>How do we deal with the cubic complexity of the eigendecomposition of matrix $\mathbf{P}$?</b>
+	      	<p class="description">
+	      	...
+	      	</p>
+      	</li>  
+      	<li><b>Diffusion maps look very similar to Laplacian eigenmaps, don't they?</b>
+	      	<p class="description">
+	      	...
+	      	</p>
+      	</li>        	     	        	   	
+      </ul>
+      </div>
+    </div>  
+   
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script type="text/javascript"> 	    
+		makemenubar("faq")			    
+    </script>     
+  </body>
+</html>

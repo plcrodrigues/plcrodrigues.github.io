@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Diffusion Maps for EEG signal analysis</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./styles/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./styles/dashboard.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./scripts/vis/dist/vis.js"></script>
+    <script type="text/javascript" src="./scripts/d3/d3.js"></script>
+    <script type="text/javascript" src="./scripts/plcr/makegraph.js"></script>    
+    <script type="text/javascript" src="./scripts/plcr/menubar.js"></script>    
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+    </script>
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>             
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./index.html">Diffusion Maps for EEG signal analysis</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar" id="menubar">
+        </div>
+      </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Brief description of the algorithm of diffusion maps</h1>                
+          <p class="description">
+            Consider we have $K$ data points denoted by $\{X_1, \dots, X_K\}$ such that $X_i \in \mathbb{R}^{n}$ and $n$ is big.
+          </p>
+          <p class="description">
+            We assume that, although these datapoints are defined in a high-dimensional Euclidean space, they actually lie on a low-dimensional manifold $\mathcal{M} \subset \mathcal{R}^{n}$.
+          </p>
+          <p class="description">
+            The algorithm we use to embed these data points on a new space relies on <b>three</b> important steps:
+          </p>
+          <ol class="description">
+            <li class="algorithm">
+              Construct an undirected weighted graph $\mathbf{G}$ where each vertex corresponds to a datapoint $X_i$ and the weights $\mathbf{W}(i,j)$ are chosen so to reflect some measure of similarity between two datapoints. A very common choice is:
+              $$
+                \mathbf{W}(i,j) = \exp\left(-\frac{d^2(X_i, X_j)}{\epsilon^2}\right),
+              $$
+              where $d(\cdot, \cdot)$ is an application-specific notion of distance between two datapoints and $\epsilon$ is a parameter that defines the scale of "locality" that one wants to impose for the Gaussian kernel.
+            </li>
+            <li class="algorithm">
+              Normalize the rows of the $K \times K$ weight matrix $\mathbf{W}$ as in
+              $$\mathbf{P} = \mathbf{D}^{-1}\mathbf{W},$$
+              where $\mathbf{D}$ is a diagonal matrix with
+              $$\quad \mathbf{D}(i,i) = \sum_j \mathbf{W}(i,j)$$
+              and we have that $\sum_j \mathbf{P}(i,j) = 1$ and $\mathbf{P}(i,j) \geq 0$. In this way, each $\mathbf{P}(i,j)$ corresponds to the probability of going from vertex $X_i$ to $X_j$ when performing a Random walk (diffusion process) over the graph.
+            </li>
+            <li class="algorithm">
+              Because matrix $\mathbf{W}$ is symmetric positive definite, all the eigenvalues of matrix $\mathbf{P}$ are positive. Moreover, because of the row-normalization of $\mathbf{W}$, the highest eigenvalue of $\mathbf{P}$ is 1. We can write the following decomposition for $\mathbf{P}$:
+              $$
+              \mathbf{P}(i,j) = \sum_{k = 0}^{K-1} \lambda_k \boldsymbol{\varphi}_k(i) \boldsymbol{\psi}_k(j),
+              $$
+              where $\lambda_k$ are the eigenvalues of $\mathbf{P}$, and $\{\boldsymbol{\varphi}_k\}$ and $\{\boldsymbol{\psi}_k\}$ are its left and right eigenvectors, respectively (left and right eigenvalues are the same for this matrix). Once we analyse the decay of the eigenvalues $\lambda_k$ we can fix a dimension $d$ to where we want to embed the datapoints, having then
+              $$
+              \Phi(X_i) = \left[
+              \begin{array}{c}
+              \lambda_1 \boldsymbol{\varphi}_1(i) \\
+              \vdots \\
+              \lambda_d \boldsymbol{\varphi}_d(i)              
+              \end{array}
+              \right] \in \mathbb{R}^{d}
+              $$
+            </li>            
+          </ol>
+          <p class="description">In summary, the data points $\{X_1, \dots, X_K\}$, which were all living in $\mathbb{R}^{n}$, are all embedded into a lower-dimensional Euclidean space $\mathbb{R}^{d}$, and are now denoted by $\{\Phi(X_1), \dots, \Phi(X_K)\}$.
+          </p>
+          <h3 class="page-section">Applying it to EEG signal analysis</h3>                
+          <p class="description">
+          In the case of EEG analysis, the recorded signals are multivariate, coming from each of the electrodes. These recordings are usually cut into windows so that one can consider each data point as $X_i \in \mathbb{R}^{n \times L}$, where $n$ is the number of electrodes and $L$ the size of the window in samples.
+          </p>          
+          <p class="description">
+          To be able to use diffusion maps to analyse EEG recordings, we have to decide what notion of <b>distance</b> we want to use. 
+          </p>
+          <p class="description">
+          In the examples shown here, we defined the distance between two datapoints $X_i$ and $X_j$ as being the Riemannian distance between the covariance matrices associate to each one of them. In other words, we first estimate the covariance matrices $C_i$ and $C_j$ via
+          $$
+          C_i = \frac{1}{L}X_iX_i^{T} \quad C_j = \frac{1}{L}X_jX_j^{T},
+          $$
+          and then use the Riemannian distance based on the Affine-Invariant Riemannian metric (AIRM) for positive definite matrices to obtain
+          $$
+          d^2(X_i, X_j) = \delta^2_R(C_i, C_j) = \left\|\log\left(C_i^{-\frac{1}{2}}C_jC_i^{-\frac{1}{2}}\right)\right\|^2_{F}
+          $$
+          </p>
+        </div>
+      
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script type="text/javascript"> 	    
+		makemenubar("algorithm")			    
+    </script>
+  </body>
+</html>

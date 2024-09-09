@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Results with EEG</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./styles/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="./styles/dashboard.css" rel="stylesheet">
+
+    <!-- My own CSS -->
+    <link href="./styles/vizstyle.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./scripts/vis/dist/vis.js"></script>
+    <script type="text/javascript" src="./scripts/d3/d3.js"></script>
+    <script type="text/javascript" src="./scripts/plcr/makegraph.js"></script>    
+    <script type="text/javascript" src="./scripts/plcr/menubar.js"></script>                 
+
+    <script type="text/javascript"> 
+
+      var divname  = 'embedding';
+      var filename = './data/Sleep/embedding.csv'
+      drawVisualization(divname, filename)          
+
+    </script>    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./index.html">Diffusion Maps for EEG signal analysis</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+	    <div class="row">
+			<div class="col-sm-3 col-md-2 sidebar" id="menubar">
+			</div>
+	    </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Sleep dataset</h1>
+          <p class="description">
+            Here we have the results of two datasets containing recordings from sleep analysis. 
+          </p>
+          <p class="description">
+            The <b>first dataset</b> was recorded at the "National Institute of Mental Health" in Czech Republic and gracefully borrowed for initial investigations by Elizaveta S. The sampling frequency is 250 Hz and multiple 2s windows were labeled for different sleep stages.
+          </p>
+          <p class="description">
+            The figure below shows an embedding using diffusion maps. Each point corresponds to a 24x24 covariance matrix (containing EEG, EMG and EOG recordings) and the colors indicate different sleep stages: <span style="color:#00b33c; font-weight: bold">REM</span>, <span style="color:#0033cc; font-weight: bold">S1</span>, <span style="color:#e6e600; font-weight: bold">S2</span>, and <span style="color:#cc0000; font-weight: bold">S3</span>.
+          </p>
+          <div class="dataviz" id="embedding"></div>
+          <p class="description">
+            The <b>second dataset</b> is a public one available at the Physionet website (<a href="https://physionet.org/pn4/sleep-edfx/" target="_blank">link</a>) and contains recordings from a sleep study between 1987 and 1991. The sampling frequency is 100 Hz and we have only 2 EEG channels (Fpz-Cz and Pz-Oz). Several windows of varying length were labeled for different sleep stages.
+          </p>
+          <p class="description">
+            The figure below shows an embedding using diffusion maps. Each point corresponds to a 2x2 covariance matrix and the colors indicate different sleep stages: <span style="color:#0033cc; font-weight: bold">S1</span>, <span style="color:#e6e600; font-weight: bold">S2</span>, and <span style="color:#cc0000; font-weight: bold">S3</span>.
+          </p>        
+          <center><img src="./figures/Sleep/sleepembedding_Physionet.svg" width="70%" height="70%"/></center>           
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./styles/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript"> 	    
+		makemenubar("sleep")			    
+    </script> 	
+  </body>
+</html>

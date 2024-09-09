@@ -21,9 +21,17 @@ author_profile: true
 You can also check my profile at <a href="https://scholar.google.com/citations?user=8Jiux08AAAAJ" target="_blank" style="font-weight:bold; color:#00b050">Google scholar</a> for a (probably) more updated list.
 
 <h2><a id="sbi">Works on simulation-based inference</a></h2>
-These publications are related to the research topic that I started developping during my post-doc and is currently my main topic of interest. Several collaborations are currently under progress with researchers from the University of Liège, Brown University, and the ICTP in Italy.
+These publications are related to the research topic that I started developping during my post-doc and is currently my main topic of interest.
 <ol class="split start" style="margin-top:1em">
-  
+
+  <li> J Linhart, G V Cardoso, A Gramfort, S Le Corff, and <u>PLC Rodrigues</u>. “<i>Diffusion posterior sampling for simulation-based inference in tall data settings
+</i>”.  Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2404.07593" target="_blank">arXiv:2404.07593</a>.
+  </li>
+
+  <li> H Häggström, <u>PLC Rodrigues</u>, G Oudoumanessah, F Forbes, U Picchini. “<i>Fast, accurate and lightweight sequential simulation-based inference using Gaussian locally linear mappings
+</i>”.  Accepted by TMLR, July 2024. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2403.07454" target="_blank">arXiv:2403.07454</a>.
+  </li>  
+
   <li> J Linhart, A Gramfort, <u>PLC Rodrigues</u>. “<i>L-C2ST: Local Diagnostics for Posterior Approximations in Simulation-Based Inference
 </i>”.  Accepted at NeurIPS 2023. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2306.03580" target="_blank">arXiv:2306.03580</a>.
   </li>

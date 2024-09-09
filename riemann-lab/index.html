@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Diffusion Maps for EEG signal analysis</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./styles/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./styles/dashboard.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./scripts/vis/dist/vis.js"></script>
+    <script type="text/javascript" src="./scripts/d3/d3.js"></script>
+    <script type="text/javascript" src="./scripts/plcr/makegraph.js"></script>    
+    <script type="text/javascript" src="./scripts/plcr/menubar.js"></script>    
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+    </script>
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>    
+    
+    <script type="text/javascript"> 
+
+      var divname  = 'L250';
+      var filename = './data/BCI-IV/trajectory_subject1_L250.csv'
+      drawVisualization(divname, filename)  
+
+      var divname  = 'L125';
+      var filename = './data/BCI-IV/trajectory_subject1_L125.csv'
+      drawVisualization(divname, filename)          
+
+    </script>      
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./index.html">Diffusion Maps for EEG signal analysis</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar" id="menubar">
+        </div>
+      </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Diffusion Maps for EEG signal analysis</h1>
+          <p class="description">
+            Here you will find some results of the embedding of high-dimensional data points in a low-dimensional Euclidean space using <b>diffusion maps</b>. We focus on the analysis of multivariate recordings of EEG signals in different contexts.
+          </p>
+          <p class="description">
+            Diffusion maps are part of what researchers call <i>manifold learning theory</i> and are often used for visualization purposes. However, it can also provide very interesting information about the intrinsic geometry of a low-dimensional manifold where the data points are assumed to live in. In fact, one can even do <b>semi-supervised learning</b> using the information gathered by the diffusion maps.
+          </p>    
+          <p class="description">
+          These are two PDF files with presentations I gave at the GIPSA-lab in March/2017
+          <ul id="linkspresentations">
+          	<li><a href="./pdfs/presentation_vibs.pdf" target="_blank">Introduction to diffusion maps for time series analysis</a></li>
+          	<li><a href="./pdfs/presentation_chess.pdf" target="_blank">Some results with diffusion maps for EEG signal analysis</a></li>          	
+          </ul>
+          </p>
+          <p class="description">
+		  If after reading this page you still have any questions or just want to discuss about something related to diffusion maps (or not), please feel free to send an e-mail to: <b>pedro-luiz.coelho-rodrigues at gipsa-lab dot fr</b>
+          </p>
+        </div>      
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script type="text/javascript"> 	    
+		makemenubar("index")			    
+    </script>
+  </body>
+</html>

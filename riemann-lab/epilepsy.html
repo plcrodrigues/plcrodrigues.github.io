@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Results with EEG</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./styles/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./styles/dashboard.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./scripts/vis/dist/vis.js"></script>
+    <script type="text/javascript" src="./scripts/d3/d3.js"></script>
+    <script type="text/javascript" src="./scripts/plcr/makegraph.js"></script>   
+    <script type="text/javascript" src="./scripts/plcr/menubar.js"></script>             
+
+    <script type="text/javascript"> 
+
+      var divname  = 'embedding-Patient_7';
+      var filename = './data/Epilepsy/embedding_Patient_7.csv'
+      drawVisualization(divname, filename)    
+
+      var divname  = 'embedding-Patient_6';
+      var filename = './data/Epilepsy/embedding_Patient_6.csv'
+      drawVisualization(divname, filename)  
+
+      var divname  = 'embedding-Physionet';
+      var filename = './data/Epilepsy/embedding_Physionet.csv'
+      drawVisualization(divname, filename)                     
+
+    </script>    
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./index.html">Diffusion Maps for EEG signal analysis</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+	    <div class="row">
+			<div class="col-sm-3 col-md-2 sidebar" id="menubar">
+			</div>
+	    </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Epilepsy dataset</h1>
+          <p class="description">
+            Here we have the results of a dataset containing recordings from patients suffering with epilepsy. The dataset was used in a competition at Kaggle's website (<a href="https://www.kaggle.com/c/seizure-detection" target="_blank">link</a>), where competitors had to classify different <b>intracranial</b> EEG recordings according to their distance to an epileptic seizure. In the following example we used several 1s clips along with their labels of "time to next seizure".
+          </p>
+          <p class="description">
+            The figure below shows the results of an embedding using diffusion maps for one patient. Each point corresponds to a 36x36 covariance matrix and the colors indicate how far the corresponding short signal is from a seizure. The latencies go from 120 seconds <span style="color:#008000; font-weight: bold">(green)</span> all the way down to 0 seconds <span style="color:#f00; font-weight: bold">(red)</span> to seizure.
+          </p>          
+          <div class="dataviz" id="embedding-Patient_7"></div>
+          <p class="description">
+            These are the results for the embedding of another patient. The points now correspond to 30x30 covariance matrices and the latencies go from 60 seconds to 0 seconds to seizure.
+          </p>          
+          <div class="dataviz" id="embedding-Patient_6"></div>          
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./styles/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript"> 	    
+		makemenubar("epilepsy")			    
+    </script> 
+  </body>
+</html>

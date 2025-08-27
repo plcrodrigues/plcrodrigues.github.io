@@ -24,6 +24,14 @@ You can also check my profile at <a href="https://scholar.google.com/citations?u
 These publications are related to the research topic that I started developping during my post-doc and is currently my main topic of interest.
 <ol class="split start" style="margin-top:1em">
 
+  <li> LMC Cabezas, VS Santos, TR Ramos, PLC Rodrigues, R Izbicki. “<i>CP4SBI: Local Conformal Calibration of Credible Sets in Simulation-Based Inference
+</i>”.  Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2508.17077" target="_blank">arXiv:2508.17077</a>.
+  </li>
+
+  <li> M Deistler, J Boelts, P Steinbach, G Moss, T Moreau, M Gloeckler, <u>PLC Rodrigues</u>, J Linhart, J K Lappalainen, B K Miller, P J Gonçalves, J-M Lueckmann, C Schröder, J H Macke. “<i>Simulation-Based Inference: A Practical Guide
+</i>”.  Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2508.12939" target="_blank">arXiv:2508.12939</a>.
+  </li>
+
   <li> J Linhart, G V Cardoso, A Gramfort, S Le Corff, and <u>PLC Rodrigues</u>. “<i>Diffusion posterior sampling for simulation-based inference in tall data settings
 </i>”.  Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2404.07593" target="_blank">arXiv:2404.07593</a>.
   </li>

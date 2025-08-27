@@ -24,7 +24,7 @@ You can also check my profile at <a href="https://scholar.google.com/citations?u
 These publications are related to the research topic that I started developping during my post-doc and is currently my main topic of interest.
 <ol class="split start" style="margin-top:1em">
 
-  <li> LMC Cabezas, VS Santos, TR Ramos, PLC Rodrigues, R Izbicki. “<i>CP4SBI: Local Conformal Calibration of Credible Sets in Simulation-Based Inference
+  <li> LMC Cabezas, VS Santos, TR Ramos, <u>PLC Rodrigues</u>, R Izbicki. “<i>CP4SBI: Local Conformal Calibration of Credible Sets in Simulation-Based Inference
 </i>”.  Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2508.17077" target="_blank">arXiv:2508.17077</a>.
   </li>
 

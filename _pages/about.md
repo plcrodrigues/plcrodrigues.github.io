@@ -12,7 +12,7 @@ redirect_from:
 
 I am a research scientist working at the <a href="https://team.inria.fr/statify/" style="color:#00b050; font-weight:bold;" target="_blank">Statify team</a> from Inria, Grenoble, France. My main research interests revolve around developing <span style="font-weight:bold">machine learning methods for the experimental sciences</span>.  
 
-News: We've been selected for a MIAI chair involving SBI and climate modelling! We will be recruiting a post-doc and a PhD student in the next months. More details soon. 
+News: We've been selected for a <a href="https://miai-cluster.univ-grenoble-alpes.fr/en/" style="color:#00b050; font-weight:bold;" target="_blank">MIAI</a> chair involving simulation-based inference and climate modelling! We will be recruiting a post-doc and a PhD student in the next months. More details soon. 
 
 <!-- <div class="container">
   <div class="row">

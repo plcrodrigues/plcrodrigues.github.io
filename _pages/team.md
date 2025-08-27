@@ -17,8 +17,8 @@ Some of their names are:
 
 ## Ph.D. students
 - Eloïse Touron [<a href="https://theses.fr/s399613" style="color:#00b050; font-weight:bold;">project</a>] 
-  (co-supervised with <a href="https://www.julyanarbel.com/" style="color:#00b050; font-weight:bold;">Julyan Arbel</a>, <a href="https://michaelarbel.github.io/" style="color:#00b050; font-weight:bold;">Michael N. Arbel</a>, and <a href="https://nellev.github.io/" style="color:#00b050; font-weight:bold;">Nelle Varoquaux</a>)
-  From 2024 to 20XX
+  <br>(co-supervised with <a href="https://www.julyanarbel.com/" style="color:#00b050; font-weight:bold;">Julyan Arbel</a>, <a href="https://michaelarbel.github.io/" style="color:#00b050; font-weight:bold;">Michael N. Arbel</a>, and <a href="https://nellev.github.io/" style="color:#00b050; font-weight:bold;">Nelle Varoquaux</a>)
+  <br>From 2024 to 20XX
 - Camille Touron [<a href="https://theses.fr/s395036" style="color:#00b050; font-weight:bold;">project</a>] (co-supervised with <a href="https://www.julyanarbel.com/" style="color:#00b050; font-weight:bold;">Julyan Arbel</a>) -- From 2024 to 20XX
 - Isabella Costa Maia [<a href="https://theses.fr/s379304" style="color:#00b050; font-weight:bold;">project</a>] (co-supervised with <a href="https://scholar.google.com/citations?user=R5NKZ9gAAAAJ&hl=fr" style="color:#00b050; font-weight:bold;">Salem Saïd</a> and <a href="https://sites.google.com/site/marcocongedo/home" style="color:#00b050; font-weight:bold;">Marco Congedo</a>) -- From 2024 to 20XX
 - Pierre-Louis Ruhlmann [<a href="https://theses.fr/s378849" style="color:#00b050; font-weight:bold;">project</a>] (co-supervised with <a href="https://michaelarbel.github.io/" style="color:#00b050; font-weight:bold;">Michael N. Arbel</a> and <a href="https://mistis.inrialpes.fr/people/forbes/" style="color:#00b050; font-weight:bold;">Florence Forbes</a>) -- From 2023 to 20XX

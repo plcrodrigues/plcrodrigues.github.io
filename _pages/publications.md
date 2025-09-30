@@ -24,6 +24,9 @@ You can also check my profile at <a href="https://scholar.google.com/citations?u
 These publications are related to the research topic that I started developping during my post-doc and is currently my main topic of interest.
 <ol class="split start" style="margin-top:1em">
 
+  <li> P-L Ruhlmann, <u>PLC Rodrigues</u>, M Arbel, F Forbes. “<i>Flow Matching for Robust Simulation-Based Inference under Model Misspecification</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2509.23385" target="_blank">arXiv:2509.23385</a>.
+  </li>
+
   <li> E Touron, <u>PLC Rodrigues</u>, J Arbel, N Varoquaux, M Arbel. “<i>Simulation-based inference of yeast centromeres
 </i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2509.00200" target="_blank">arXiv:2509.00200</a>.
   </li>

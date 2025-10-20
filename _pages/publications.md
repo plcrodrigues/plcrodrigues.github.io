@@ -24,6 +24,9 @@ You can also check my profile at <a href="https://scholar.google.com/citations?u
 These publications are related to the research topic that I started developping during my post-doc and is currently my main topic of interest.
 <ol class="split start" style="margin-top:1em">
 
+  <li> C Touron, GV Cardoso, J Arbel, <u>PLC Rodrigues</u>. “<i>Error analysis of a compositional score-based algorithm for simulation-based inference</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2510.15817" target="_blank">arXiv:2510.15817</a>.
+  </li>
+
   <li> P-L Ruhlmann, <u>PLC Rodrigues</u>, M Arbel, F Forbes. “<i>Flow Matching for Robust Simulation-Based Inference under Model Misspecification</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2509.23385" target="_blank">arXiv:2509.23385</a>.
   </li>
 
@@ -39,7 +42,7 @@ These publications are related to the research topic that I started developping 
 </i>”. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2508.12939" target="_blank">arXiv:2508.12939</a>.
   </li>
 
-  <li> J Linhart, G V Cardoso, A Gramfort, S Le Corff, and <u>PLC Rodrigues</u>. “<i>Diffusion posterior sampling for simulation-based inference in tall data settings
+  <li> J Linhart, GV Cardoso, A Gramfort, S Le Corff, and <u>PLC Rodrigues</u>. “<i>Diffusion posterior sampling for simulation-based inference in tall data settings
 </i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2404.07593" target="_blank">arXiv:2404.07593</a>.
   </li>
 
@@ -57,7 +60,7 @@ These publications are related to the research topic that I started developping 
   <li> J Linhart, A Gramfort, <u>PLC Rodrigues</u>. “<i>Validation Diagnostics for SBI algorithms based on Normalizing Flows</i>”. Accepted at at the Workshop on Machine Learning and the Physical Sciences at NeurIPS 2022. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2211.09602" target="_blank">arXiv:2211.09602</a>.
   </li>  
 
-  <li> <u>PLC Rodrigues</u>, Thomas Moreau, Gilles Louppe, A Gramfort. “<i>HNPE: Leveraging Global Parameters for Neural Posterior Estimation
+  <li> <u>PLC Rodrigues</u>, T Moreau, G Louppe, A Gramfort. “<i>HNPE: Leveraging Global Parameters for Neural Posterior Estimation
 </i>”. Accepted at NeurIPS 2021. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2102.06477" target="_blank">arXiv:2102.06477</a>.
   </li>
   

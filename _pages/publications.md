@@ -24,6 +24,10 @@ You can also check my profile at <a href="https://scholar.google.com/citations?u
 These publications are related to the research topic that I started developping during my post-doc and is currently my main topic of interest.
 <ol class="split start" style="margin-top:1em">
 
+  <li> IC Maia, <u>PLC Rodrigues</u>, M Congedo, S Said. “<i>Curvature-based rejection sampling
+</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.science/hal-05332278" target="_blank">hal-05332278</a>.
+  </li>
+
   <li> C Touron, GV Cardoso, J Arbel, <u>PLC Rodrigues</u>. “<i>Error analysis of a compositional score-based algorithm for simulation-based inference</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2510.15817" target="_blank">arXiv:2510.15817</a>.
   </li>
 

@@ -24,10 +24,6 @@ You can also check my profile at <a href="https://scholar.google.com/citations?u
 These publications are related to the research topic that I started developping during my post-doc and is currently my main topic of interest.
 <ol class="split start" style="margin-top:1em">
 
-  <li> IC Maia, <u>PLC Rodrigues</u>, M Congedo, S Said. “<i>Curvature-based rejection sampling
-</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.science/hal-05332278" target="_blank">hal-05332278</a>.
-  </li>
-
   <li> C Touron, GV Cardoso, J Arbel, <u>PLC Rodrigues</u>. “<i>Error analysis of a compositional score-based algorithm for simulation-based inference</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2510.15817" target="_blank">arXiv:2510.15817</a>.
   </li>
 
@@ -78,12 +74,19 @@ These publications are related to the research topic that I started developping 
 </ol>
 
 <div id="transfer_learning">
-<h2>Works on transfer learning</h2>
+<h2>Works on Riemannian geometry for multivariate time series</h2>
 Both journal papers lay the mathematical foundations of my contributions in transfer learning for data defined in a SPD manifold. The other conference papers were all oral presentations, showing the growing interest of the research community in these methods.
 </div>
 <ol class="split" style="margin-top:1em">
+
+  <li> IC Maia, <u>PLC Rodrigues</u>, M Congedo, S Said. “<i>Curvature-based rejection sampling
+</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.science/hal-05332278" target="_blank">hal-05332278</a>.
+  </li>
+
   <li>A Mellot, A Collas, <u>PLC Rodrigues</u>, D Engemann, A Gramfort. “<i>Harmonizing and aligning M/EEG datasets with covariance-based techniques to enhance predictive regression modeling</i>”. Neuroscience Imaging, 2023, pp.1-26. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.science/hal-04328670" target="_blank">hal-04328670</a></li>
+
   <li>L Bougrain, S Rimbert, <u>PLC Rodrigues</u>, G Canron, F Lotte. “<i>Guidelines to use transfer learning for motor imagery detection: an experimental study</i>”. Accepted at the IEEE NER2021 conference. December, 2020.</li>
+
   <li><u>PLC Rodrigues</u>, M Congedo, C Jutten, “<i>Dimensionality transcending: a method for merging BCI datasets with different dimensionalities</i>” IEEE Transactions on Biomedical Engineering, July, 2020, in press. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.inria.fr/hal-02905045" target="_blank">hal-02905045</a>. Related code available <a style="color:#00b050; font-weight:bold;" href="https://github.com/plcrodrigues/DT" target="_blank">here</a>.
   </li>
   <li><u>PLC Rodrigues</u>, M Congedo, C Jutten. “<i>‘When does it work?’: An exploratory analysis of transfer learning for BCI</i>”. 8th Graz Brain-Computer Interface Conference 2019, September, 2019, Graz, Austria. Oral presentation. Best student paper award. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.inria.fr/hal-02321580" target="_blank">hal-02321580</a>.
@@ -91,16 +94,9 @@ Both journal papers lay the mathematical foundations of my contributions in tran
   <li><u>PLC Rodrigues</u>, M Congedo, C Jutten. “<i>A data imputation method for matrices in the
   symmetric positive definite manifold</i>”. XXVIIème colloque GRETSI (GRETSI 2019), August,
   2019, Lille, France. Oral presentation. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.inria.fr/hal-02321587" target="_blank">hal-02321587</a>.  
-  </li>  
+  </li>
   <li><u>PLC Rodrigues</u>, C Jutten, M Congedo, “<i>Riemannian Procrustes analysis: transfer learning for brain-computer interfaces</i>”. IEEE Transactions on Biomedical Engineering, vol. 66, no. 8, pp. 2390-2401, December, 2018. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.inria.fr/hal-01971856" target="_blank">hal-01971856</a>. Related code available <a style="color:#00b050; font-weight:bold;" href="https://github.com/plcrodrigues/RPA" target="_blank">here</a>.
   </li>
-</ol>
-
-<div id="dimension_reduction">
-<h2>Works on dimensionality reduction</h2>
-These were the first published works of my Ph.D. thesis. They are based on the widely known mathematical framework of diffusion maps and extend it to the case of data points defined in the symmetric-positive definite manifold. Reference [8] is the first work in the literature, to the best of my knowledge, that applies these concepts to the analysis of multivariate time series.
-</div>
-<ol class="split" style="margin-top:1em">
   <li><u>PLC Rodrigues</u>, M Congedo, C Jutten. “<i>Multivariate time-series analysis via manifold
   learning</i>”. IEEE Statistical Signal Processing Workshop (SSP 2018), June, 2018, Fribourg-en-Brisgau, Germany. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.inria.fr/hal-01868167" target="_blank">hal-01868167</a>. Related code available <a style="color:#00b050; font-weight:bold;" href="https://github.com/plcrodrigues/PhD-Code" target="_blank">here</a>.
   </li>

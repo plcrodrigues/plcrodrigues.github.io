@@ -11,9 +11,10 @@ author_profile: true
 
 As a Inria researcher, I am part of the <a href="https://team.inria.fr/statify/" style="color:#00b050; font-weight:bold;">Statify</a> team.
 
-<div>
-  <img src="/images/photo-statify.jpg" height="70px"/>
-</div>
+<figure>
+  <img src="/images/photo-statify.jpeg" height="70px"/>
+  <figcaption>Statify team at the Charmant Som (November 2025)</figcaption>
+</figure>
 
 I'm also very lucky to work (and have worked) closely with very talented students. 
 

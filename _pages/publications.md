@@ -13,8 +13,7 @@ author_profile: true
 </p>
 <ul class="publi_list">
   <li class="publi_list"><a href="#sbi" style="color:#00b050; font-weight:bold;">Simulation-based inference </a></li>
-  <li class="publi_list"><a href="#transfer_learning" style="color:#00b050; font-weight:bold;">Transfer learning</a></li>
-  <li class="publi_list"><a href="#dimension_reduction" style="color:#00b050; font-weight:bold;">Dimensionality reduction</a></li>
+  <li class="publi_list"><a href="#riemannian" style="color:#00b050; font-weight:bold;">Riemannian geometry</a></li>
   <li class="publi_list"><a href="#pdc" style="color:#00b050; font-weight:bold;">Neural connectivity estimation</a></li>
 </ul>
 
@@ -24,22 +23,22 @@ You can also check my profile at <a href="https://scholar.google.com/citations?u
 These publications are related to the research topic that I started developping during my post-doc and is currently my main topic of interest.
 <ol class="split start" style="margin-top:1em">
 
-  <li> C Touron, GV Cardoso, J Arbel, <u>PLC Rodrigues</u>. “<i>Error analysis of a compositional score-based algorithm for simulation-based inference</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2510.15817" target="_blank">arXiv:2510.15817</a>.
-  </li>
-
   <li> P-L Ruhlmann, <u>PLC Rodrigues</u>, M Arbel, F Forbes. “<i>Flow Matching for Robust Simulation-Based Inference under Model Misspecification</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2509.23385" target="_blank">arXiv:2509.23385</a>.
   </li>
 
+  <li> C Touron, GV Cardoso, J Arbel, <u>PLC Rodrigues</u>. “<i>Error analysis of a compositional score-based algorithm for simulation-based inference</i>”. Work accepted for the 1st Workshop on Principles of Generative Modeling (PriGM) at EurIPS2025. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2510.15817" target="_blank">arXiv:2510.15817</a>.
+  </li>
+
   <li> E Touron, <u>PLC Rodrigues</u>, J Arbel, N Varoquaux, M Arbel. “<i>Simulation-based inference of yeast centromeres
-</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2509.00200" target="_blank">arXiv:2509.00200</a>.
+</i>”. Work accepted for the 1st SIMBIOCHEM Workshop at EurIPS 2025. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2509.00200" target="_blank">arXiv:2509.00200</a>.
   </li>
 
   <li> LMC Cabezas, VS Santos, TR Ramos, <u>PLC Rodrigues</u>, R Izbicki. “<i>CP4SBI: Local Conformal Calibration of Credible Sets in Simulation-Based Inference
-</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2508.17077" target="_blank">arXiv:2508.17077</a>.
+</i>”. Work accepted at the Philosophical Transactions A of the Royal Society. Available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2508.17077" target="_blank">arXiv:2508.17077</a>.
   </li>
 
   <li> M Deistler, J Boelts, P Steinbach, G Moss, T Moreau, M Gloeckler, <u>PLC Rodrigues</u>, J Linhart, J K Lappalainen, B K Miller, P J Gonçalves, J-M Lueckmann, C Schröder, J H Macke. “<i>Simulation-Based Inference: A Practical Guide
-</i>”. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2508.12939" target="_blank">arXiv:2508.12939</a>.
+</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2508.12939" target="_blank">arXiv:2508.12939</a>.
   </li>
 
   <li> J Linhart, GV Cardoso, A Gramfort, S Le Corff, and <u>PLC Rodrigues</u>. “<i>Diffusion posterior sampling for simulation-based inference in tall data settings
@@ -73,14 +72,13 @@ These publications are related to the research topic that I started developping 
 
 </ol>
 
-<div id="transfer_learning">
+<div id="riemannian">
 <h2>Works on Riemannian geometry for multivariate time series</h2>
 Both journal papers lay the mathematical foundations of my contributions in transfer learning for data defined in a SPD manifold. The other conference papers were all oral presentations, showing the growing interest of the research community in these methods.
 </div>
 <ol class="split" style="margin-top:1em">
 
-  <li> IC Maia, <u>PLC Rodrigues</u>, M Congedo, S Said. “<i>Curvature-based rejection sampling
-</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.science/hal-05332278" target="_blank">hal-05332278</a>.
+  <li> IC Maia, <u>PLC Rodrigues</u>, M Congedo, S Said. “<i>Curvature-based rejection sampling</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.science/hal-05332278" target="_blank">hal-05332278</a>.
   </li>
 
   <li>A Mellot, A Collas, <u>PLC Rodrigues</u>, D Engemann, A Gramfort. “<i>Harmonizing and aligning M/EEG datasets with covariance-based techniques to enhance predictive regression modeling</i>”. Neuroscience Imaging, 2023, pp.1-26. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.science/hal-04328670" target="_blank">hal-04328670</a></li>

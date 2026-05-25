@@ -23,7 +23,13 @@ You can also check my profile at <a href="https://scholar.google.com/citations?u
 These publications are related to the research topic that I started developping during my post-doc and is currently my main topic of interest.
 <ol class="split start" style="margin-top:1em">
 
-  <li> P-L Ruhlmann, <u>PLC Rodrigues</u>, M Arbel, F Forbes. “<i>Flow Matching for Robust Simulation-Based Inference under Model Misspecification</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2509.23385" target="_blank">arXiv:2509.23385</a>.
+  <li> E Touron, <u>PLC Rodrigues</u>, J Arbel, N Varoquaux, M Arbel.“<i>BlockFormer: Transformer-based inference from interaction maps</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2605.21617" target="_blank">arXiv:2605.21617</a>.
+  </li>
+
+  <li> C Touron, GV Cardoso, J Arbel, <u>PLC Rodrigues</u>. “<i>Theoretical guidelines for annealed Langevin dynamics in compositional simulation-based inference</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2605.21253" target="_blank">arXiv:2605.21253</a>.
+  </li>
+
+  <li> P-L Ruhlmann, M Arbel, F Forbes, <u>PLC Rodrigues</u>. “<i>Flow Matching for Robust Simulation-Based Inference under Model Misspecification</i>”. Accepted at ICML 2026. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2509.23385" target="_blank">arXiv:2509.23385</a>.
   </li>
 
   <li> C Touron, GV Cardoso, J Arbel, <u>PLC Rodrigues</u>. “<i>Error analysis of a compositional score-based algorithm for simulation-based inference</i>”. Work accepted for the 1st Workshop on Principles of Generative Modeling (PriGM) at EurIPS2025. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2510.15817" target="_blank">arXiv:2510.15817</a>.

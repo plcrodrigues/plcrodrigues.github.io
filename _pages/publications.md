@@ -48,11 +48,11 @@ These publications are related to the research topic that I started developping 
   </li>
 
   <li> J Linhart, GV Cardoso, A Gramfort, S Le Corff, and <u>PLC Rodrigues</u>. “<i>Diffusion posterior sampling for simulation-based inference in tall data settings
-</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2404.07593" target="_blank">arXiv:2404.07593</a>.
+</i>”. Accepted at TMLR with Journal-to-Conference (J2C) Certification. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2404.07593" target="_blank">arXiv:2404.07593</a>.
   </li>
 
   <li> H Häggström, <u>PLC Rodrigues</u>, G Oudoumanessah, F Forbes, U Picchini. “<i>Fast, accurate and lightweight sequential simulation-based inference using Gaussian locally linear mappings
-</i>”. Accepted by TMLR, July 2024. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2403.07454" target="_blank">arXiv:2403.07454</a>.
+</i>”. Accepted at TMLR, July 2024. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2403.07454" target="_blank">arXiv:2403.07454</a>.
   </li>  
 
   <li> J Linhart, A Gramfort, <u>PLC Rodrigues</u>. “<i>L-C2ST: Local Diagnostics for Posterior Approximations in Simulation-Based Inference

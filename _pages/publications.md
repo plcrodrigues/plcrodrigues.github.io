@@ -48,7 +48,7 @@ These publications are related to the research topic that I started developping 
   </li>
 
   <li> J Linhart, GV Cardoso, A Gramfort, S Le Corff, and <u>PLC Rodrigues</u>. “<i>Diffusion posterior sampling for simulation-based inference in tall data settings
-</i>”. Accepted at TMLR with Journal-to-Conference (J2C) Certification. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2404.07593" target="_blank">arXiv:2404.07593</a>.
+</i>”. Accepted at TMLR, February 2026, with Journal-to-Conference (J2C) Certification. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2404.07593" target="_blank">arXiv:2404.07593</a>.
   </li>
 
   <li> H Häggström, <u>PLC Rodrigues</u>, G Oudoumanessah, F Forbes, U Picchini. “<i>Fast, accurate and lightweight sequential simulation-based inference using Gaussian locally linear mappings
@@ -84,7 +84,7 @@ Both journal papers lay the mathematical foundations of my contributions in tran
 </div>
 <ol class="split" style="margin-top:1em">
 
-  <li> IC Maia, <u>PLC Rodrigues</u>, M Congedo, S Said. “<i>Curvature-based rejection sampling</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.science/hal-05332278" target="_blank">hal-05332278</a>.
+  <li> IC Maia, <u>PLC Rodrigues</u>, M Congedo, S Said. “<i>Curvature-based rejection sampling</i>”. Published at TMLR, June 2026. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.science/hal-05332278" target="_blank">hal-05332278</a>.
   </li>
 
   <li>A Mellot, A Collas, <u>PLC Rodrigues</u>, D Engemann, A Gramfort. “<i>Harmonizing and aligning M/EEG datasets with covariance-based techniques to enhance predictive regression modeling</i>”. Neuroscience Imaging, 2023, pp.1-26. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://hal.science/hal-04328670" target="_blank">hal-04328670</a></li>

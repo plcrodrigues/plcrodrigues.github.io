@@ -23,6 +23,9 @@ You can also check my profile at <a href="https://scholar.google.com/citations?u
 These publications are related to the research topic that I started developping during my post-doc and is currently my main topic of interest.
 <ol class="split start" style="margin-top:1em">
 
+  <li> LMC Cabezas, S Wendling, A Gallard, G Mouttapa, J Le Sommer, <u>PLC Rodrigues</u>. “<i>Calibrating subgrid parametrizations of single-column ocean models via simulation-based inference</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2609.13242" target="_blank">arXiv:2609.13242</a>.
+  </li>
+
   <li> E Touron, <u>PLC Rodrigues</u>, J Arbel, N Varoquaux, M Arbel. “<i>BlockFormer: Transformer-based inference from interaction maps</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2605.21617" target="_blank">arXiv:2605.21617</a>.
   </li>
 

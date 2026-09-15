@@ -21,7 +21,7 @@ I'm also very lucky to work (and have worked) closely with very talented student
 Some of their names are:
 
 ## Ph.D. students
-- <a href="https://monoxido45.github.io/"">Luben Miguel Cruz Cabezas</a>
+- <a href="https://monoxido45.github.io/">Luben Miguel Cruz Cabezas</a>
 [worked on the <a href="https://sbi4c.inria.fr/" style="color:#00b050; font-weight:bold;">SBI4C</a> project]
 <br>One-year visit funded by FAPESP in 2025-2026
 - Eloïse Touron [<a href="https://theses.fr/s399613" style="color:#00b050; font-weight:bold;">project</a>] 
@@ -34,13 +34,13 @@ Some of their names are:
 <br>From 2024 to 20XX
 - Pierre-Louis Ruhlmann [<a href="https://theses.fr/s378849" style="color:#00b050; font-weight:bold;">project</a>] <br>Co-supervised with <a href="https://michaelarbel.github.io/" style="color:#00b050; font-weight:bold;">Michael N. Arbel</a> and <a href="https://mistis.inrialpes.fr/people/forbes/" style="color:#00b050; font-weight:bold;">Florence Forbes</a>
 <br>From 2023 to 20XX
-- <a href="https://julialinhart.github.io/"">Julia Linhart</a> 
+- <a href="https://julialinhart.github.io/">Julia Linhart</a> 
 [<a href="https://theses.fr/2024UPASG091" style="color:#00b050; font-weight:bold;">project</a>]<br>Co-supervised with <a href="https://alexandre.gramfort.net/" style="color:#00b050; font-weight:bold;">Alexandre Gramfort</a>
 <br>From 2021 to 2024
 <br>Now post-doc at NYU
 
 ## Post-docs
-- <a href="https://pgnresearch.fr/"">Paul-Gauthier Noé</a>
+- <a href="https://pgnresearch.fr/">Paul-Gauthier Noé</a>
 <br>Co-supervised with <a href="https://xavirema.eu/" style="color:#00b050; font-weight:bold;">Xavier Alameda-Pineda</a> 
 <br>From 2024 to 2025
 <br>Now CNRS researcher at LIS in Marseille

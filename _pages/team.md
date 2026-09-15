@@ -21,6 +21,9 @@ I'm also very lucky to work (and have worked) closely with very talented student
 Some of their names are:
 
 ## Ph.D. students
+- <a href="https://monoxido45.github.io/"">Luben Miguel Cruz Cabezas</a>
+[working on the SBI4C project]
+<br>One-year visit funded by FAPESP in 2025-2026
 - Eloïse Touron [<a href="https://theses.fr/s399613" style="color:#00b050; font-weight:bold;">project</a>] 
   <br>Co-supervised with <a href="https://www.julyanarbel.com/" style="color:#00b050; font-weight:bold;">Julyan Arbel</a>, <a href="https://michaelarbel.github.io/" style="color:#00b050; font-weight:bold;">Michael N. Arbel</a>, and <a href="https://nellev.github.io/" style="color:#00b050; font-weight:bold;">Nelle Varoquaux</a>
   <br>From 2024 to 20XX
@@ -31,18 +34,27 @@ Some of their names are:
 <br>From 2024 to 20XX
 - Pierre-Louis Ruhlmann [<a href="https://theses.fr/s378849" style="color:#00b050; font-weight:bold;">project</a>] <br>Co-supervised with <a href="https://michaelarbel.github.io/" style="color:#00b050; font-weight:bold;">Michael N. Arbel</a> and <a href="https://mistis.inrialpes.fr/people/forbes/" style="color:#00b050; font-weight:bold;">Florence Forbes</a>
 <br>From 2023 to 20XX
-- Julia Linhart [<a href="https://theses.fr/2024UPASG091" style="color:#00b050; font-weight:bold;">project</a>]<br>Co-supervised with <a href="https://alexandre.gramfort.net/" style="color:#00b050; font-weight:bold;">Alexandre Gramfort</a>
+- <a href="https://julialinhart.github.io/"">Julia Linhart</a> 
+[<a href="https://theses.fr/2024UPASG091" style="color:#00b050; font-weight:bold;">project</a>]<br>Co-supervised with <a href="https://alexandre.gramfort.net/" style="color:#00b050; font-weight:bold;">Alexandre Gramfort</a>
 <br>From 2021 to 2024
+<br>Now post-doc at NYU
 
 ## Post-docs
-- Paul-Gauthier Noé
+- <a href="https://pgnresearch.fr/"">Paul-Gauthier Noé</a>
 <br>Co-supervised with <a href="https://xavirema.eu/" style="color:#00b050; font-weight:bold;">Xavier Alameda-Pineda</a> 
 <br>From 2024 to 2025
+<br>Now CNRS researcher at LIS in Marseille
 - Jhouben Ramirez
 <br>Co-supervised with <a href="http://mistis.inrialpes.fr/people/forbes/" style="color:#00b050; font-weight:bold;">Florence Forbes</a>
 <br>From 2022 to 2024
 
+## Research engineer
+- Sacha Wendling
+<br>Co-supervised with <a href="https://datamove.imag.fr/bruno.raffin/" style="color:#00b050; font-weight:bold;">Bruno Raffin</a>
+<br>From 2026 to 2026
+
 ## Interns
+- Aurèle Gallard (Centrale Paris) -- 2026 (co-supervised with <a href="https://monoxido45.github.io/" style="color:#00b050; font-weight:bold;">Luben Cabezas</a> and <a href="https://mistis.inrialpes.fr/~forbes/" style="color:#00b050; font-weight:bold;">Florence Forbes</a>)
 - Camille Touron (UGA) -- 2024 (co-supervised with <a href="https://michaelarbel.github.io/" style="color:#00b050; font-weight:bold;">Michael N. Arbel</a>)
 - Eloïse Touron (ENSIMAG) -- 2024 (co-supervised with <a href="https://datamove.imag.fr/bruno.raffin/" style="color:#00b050; font-weight:bold;">Bruno Raffin</a>)
 - Maelig Hurte (UGA) -- 2023 (co-supervised with <a href="https://scholar.google.com/citations?user=R5NKZ9gAAAAJ&hl=fr" style="color:#00b050; font-weight:bold;">Salem Saïd</a>)

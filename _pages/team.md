@@ -22,7 +22,7 @@ Some of their names are:
 
 ## Ph.D. students
 - <a href="https://monoxido45.github.io/"">Luben Miguel Cruz Cabezas</a>
-[working on the SBI4C project]
+[worked on the <a href="https://sbi4c.inria.fr/" style="color:#00b050; font-weight:bold;">SBI4C</a> project]
 <br>One-year visit funded by FAPESP in 2025-2026
 - Eloïse Touron [<a href="https://theses.fr/s399613" style="color:#00b050; font-weight:bold;">project</a>] 
   <br>Co-supervised with <a href="https://www.julyanarbel.com/" style="color:#00b050; font-weight:bold;">Julyan Arbel</a>, <a href="https://michaelarbel.github.io/" style="color:#00b050; font-weight:bold;">Michael N. Arbel</a>, and <a href="https://nellev.github.io/" style="color:#00b050; font-weight:bold;">Nelle Varoquaux</a>

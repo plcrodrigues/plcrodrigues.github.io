@@ -26,13 +26,13 @@ These publications are related to the research topic that I started developping 
   <li> LMC Cabezas, S Wendling, A Gallard, G Mouttapa, J Le Sommer, <u>PLC Rodrigues</u>. “<i>Calibrating subgrid parametrizations of single-column ocean models via simulation-based inference</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2609.13242" target="_blank">arXiv:2609.13242</a>.
   </li>
 
-  <li> E Touron, <u>PLC Rodrigues</u>, J Arbel, N Varoquaux, M Arbel. “<i>BlockFormer: Transformer-based inference from interaction maps</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2605.21617" target="_blank">arXiv:2605.21617</a>.
+  <li> E Touron, <u>PLC Rodrigues</u>, J Arbel, N Varoquaux, M Arbel. “<i>BlockFormer: Transformer-based inference from interaction maps</i>”. Accepted at NeurIPS 2026. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2605.21617" target="_blank">arXiv:2605.21617</a>.
   </li>
 
-  <li> C Touron, GV Cardoso, J Arbel, <u>PLC Rodrigues</u>. “<i>Theoretical guidelines for annealed Langevin dynamics in compositional simulation-based inference</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2605.21253" target="_blank">arXiv:2605.21253</a>.
+  <li> C Touron, GV Cardoso, J Arbel, <u>PLC Rodrigues</u>. “<i>Theoretical guidelines for annealed Langevin dynamics in compositional simulation-based inference</i>”. Accepted at NeurIPS 2026. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2605.21253" target="_blank">arXiv:2605.21253</a>.
   </li>
 
-  <li> R Izbicki, <u>PLC Rodrigues</u>. “<i>Benchmarking Tabular Foundation Models for Conditional Density Estimation in Regression</i>”. Under review. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2603.26611" target="_blank">arXiv:2603.26611</a>.
+  <li> R Izbicki, <u>PLC Rodrigues</u>. “<i>Benchmarking Tabular Foundation Models for Conditional Density Estimation in Regression</i>”. Accepted at TMLR. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://arxiv.org/abs/2603.26611" target="_blank">arXiv:2603.26611</a>.
   </li>
 
   <li> P-L Ruhlmann, M Arbel, F Forbes, <u>PLC Rodrigues</u>. “<i>Flow Matching for Robust Simulation-Based Inference under Model Misspecification</i>”. Accepted at ICML 2026. Paper available at <a style="color:#00b050; font-weight:bold;" href="https://www.arxiv.org/abs/2509.23385" target="_blank">arXiv:2509.23385</a>.
